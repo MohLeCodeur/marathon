@@ -1,0 +1,413 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- Mirrored from www.marathon.co.uk/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Mar 2025 23:09:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" href="favicon.ico" />
+	<title>Home | Marathon London</title>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="canonical" href="index.html">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900">
+	<link rel="stylesheet" href="css/styled882.css?v=Fd3f0XFBpHHPdH8P2gW-Dj62pnboBWRgL9UTkHRXjFw">
+
+	
+	
+</head>
+
+
+<body>
+	<script nonce="m7ZMaVvocDSc/wvfbvZwypWGk3X1qdZwN818daqJ8G4=" type = "text/javascript" >
+    var config = {
+        apiKey: '89789d071d481b8dfb074a8766005961b088cf25',
+     product: 'PRO_MULTISITE',
+        initialState: "open",
+        necessaryCookies: ['UMB-XSRF-TOKEN'],
+        theme: 'light',
+        position: 'left',
+        acceptButton: true,
+        rejectButton: true,
+        consentCookieExpiry: 90,
+	 branding: {
+             fontFamily: "Playfair Display,Roboto,Arial,Helvetica,sans-serif",
+            fontColor: "#676767",
+            fontSizeTitle: "20px",
+            fontSizeIntro: "14px",
+            fontSizeHeaders: "20px",
+            fontSize: "14px",
+            acceptText: "#fff",	
+            acceptBackground: "#8f2829",
+            rejectText: "#fff",
+            rejectBackground: "#8f2829",
+            backgroundColor: "#e1e1e1",
+	    alertBackground: "#8f2829",
+	    alertText: "#fff",
+            toggleText: "#fff",
+            toggleColor: "#fff",
+            toggleBackground: "#8f2829",
+            removeAbout: true
+        },
+        text: {
+            notifyTitle: "Our use of cookies",
+            notifyDescription: "We use cookies to make the site work and help us make it better. By clicking accept, weâ€™ll set recommended analytics cookies. Or, you can ignore or close this message and weâ€™ll set only the recommended ones.",
+            accept: "Accept",
+            reject: "Reject",
+            settings: "Settings",
+            necessaryTitle: "Necessary cookies",
+            necessaryDescription: "Necessary cookies enable core functionality such as security, network management, and accessibility. You may disable these by changing your browser settings, but this may affect how the website functions.",
+            title: "Our use of cookies",
+            intro: "We use necessary cookies to make our site work. We\u0027d also like to set optional analytics cookies to help us improve it. Using this tool will set a cookie on your device to remember your preferences.",
+            acceptRecommended: "accept",
+            acceptSettings: "Accept",
+            rejectSettings: "Reject",
+            closeLabel: "",
+        },
+        statement: {
+            description: "For more detailed information about the cookies we use, see our",
+            name: "Cookies page",
+            url: "/privacy-cookie-policy",
+            updated: "21/11/2019",
+        },        
+        optionalCookies: [{
+            name: "analytics",
+            label: "Analytics cookies",
+            description: "We\u0027d like to set Google Analytics cookies to help us to improve our website by collecting and reporting information on how you use it. The cookies collect information in a way that does not directly identify anyone. If you choose to switch these cookies off (by moving the slide bar to 'Off') we will not be able to track, on any anonymous basis, how many visitors we have to our site, and therefore monitor its performance. For more information on how these cookies work, please see our \u0027Cookies page\u0027.",
+            cookies: ["_ga","_gid","_gat"],
+            recommendedState: true,
+			lawfulBasis: "consent",
+            onAccept: function() {
+                (function(w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push({
+                        'gtm.start': new Date().getTime(),
+                        event: 'gtm.js'
+                    });
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s),
+                        dl = l != 'dataLayer' ? '&l=' + l : '';
+                    j.async = true;
+                    j.src = '../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-55X5GQD');
+                if (typeof(BrowseAloud) != "undefined") {
+                    BrowseAloud.analytics = BrowseAloud.org_analytics;
+                }
+            },
+            onRevoke: function() {
+                window['ga-disable-GTM-55X5GQD'] = true;
+                if (typeof(BrowseAloud) != "undefined") {
+                    BrowseAloud.analytics = BrowseAloud.no_analytics;
+                }
+            },            
+        },	
+		]
+    };
+
+
+var loops = 0;
+var threshold = 30;
+
+function CookieControlInit() {
+    if (typeof CookieControl !== "undefined" && window.jQuery && $('#ccc').length > 0) {
+        if ($('header[role=banner]').length > 0) {
+            $('#ccc').insertBefore($('header[role=banner]'));
+            $('#ccc').css('z-index', 9999);
+        }
+        $('#ccc-optional-categories .optional-cookie').each(function() {
+            var label = $('.optional-cookie-header', $(this)).text();
+            var idAttr = (label.split(' ').join('_')).toLowerCase();
+            $('<span/>', {
+                'class': 'invisible',
+                for: idAttr,
+                text: label + " toggle",
+            }).prependTo($('.checkbox-toggle-label', $(this)));
+            $('.checkbox-toggle-input', $(this)).attr('id', idAttr);
+
+        });
+    } else {
+        if (loops++ < threshold) {
+            setTimeout(CookieControlInit, 300);
+        }
+    }
+}
+var script = document.createElement('script');
+script.onload = function() {
+    CookieControl.load(config);
+    CookieControlInit();
+};
+script.crossorigin = "anonymous";
+script.src = '../cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js';
+document.head.appendChild(script);
+
+var onPageStyle = "";
+if (config.text.acceptRecommended == "") {
+    onPageStyle += "#ccc-recommended-settings{display:none;}"
+}
+if (config.text.rejectSettings == "") {
+    onPageStyle += "#ccc-reject-settings{display:none;}"
+}
+if (onPageStyle != "") {
+    var style = document.createElement('style');
+    style.innerHTML = onPageStyle;
+    document.head.appendChild(style);
+}
+</script>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55X5GQD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<div class="wrapper">
+
+		
+<header class="header homepage-header" aria-haspopup="true">
+    <div class="header-inner">
+        <nav class="left">
+                <a href="contact-us/index.html">Contact Us</a>
+        </nav>
+
+        <a href="index.html" class="logo">
+                <img src="media/1016/logo.svg" class="logo-color" />
+                <img src="media/1015/logo-white.svg" class="logo-white" />
+                <img src="media/1014/logo-emblem.svg" alt="Marathon" class="logo-emblem" />
+        </a>
+
+        <div class="right">
+                <button type="button" class="btn-client js-open-client"><span>Client area</span></button>
+        </div>
+    </div>
+
+        <div class="client-overlay-wrap"  aria-hidden="true" >
+                <div class="client-inner">
+                    <button type="button" class="close-overlay"><span class="font-ico-close"></span><span class="sr-only">Close client overlay</span></button>
+                    <h3>Sign in below</h3>
+
+                    
+
+<form action="https://www.marathon.co.uk/" class="form" enctype="multipart/form-data" id="formf623acffd6894058ac47f0dc6c2e62d4" method="post"><div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div><input class="in-text" data-val="true" data-val-required="The User name field is required." id="client-email" name="Username" placeholder="Email address" type="text" value="" /><input class="in-text" data-val="true" data-val-length="The field Password must be a string with a maximum length of 256." data-val-length-max="256" data-val-required="The Password field is required." id="client-password" maxlength="256" name="Password" placeholder="Password" type="password" value="" />    <button type="submit" class="btn keep-overlay-open">Login</button>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8GqEOhd3m2pMgn4ccNZWJyFtZi4iAilTIsQ5NTwOQ7TU-2asJwFO8xNN88VMGbdLmLdCiSz4HqjikJZf79FDvRBvSBSjEFz5OHoAGyztngU-GPGbvgsWHQzdQC8M9wAq5gEmrW0byaTa1uS6nIYCCb8" /><input name="ufprt" type="hidden" value="CfDJ8GqEOhd3m2pMgn4ccNZWJyGwxm3BEReloIQJSXy5Aq3il9nrLWM4hCF9_fWFwtNWl7H1kd_xZD8mk_ZVm2n9GcKpin6gqA9kNJ_42LfY8ANvOKLqfOm-VfMreiKrpRxCWHVeIE1TsY6KpUB41cWPU1w" /></form><div class="user-links">
+    <a href="account/password-reset/index.html">Forgot your password?</a>
+</div>
+
+                </div>
+            </div>
+</header>
+
+		<main class="content">
+			
+<div class="home-hero-banner" style="background-image: url('media/1001/darkCastle.jpeg');">
+	<div class="hero-banner-content">
+		<h1>Thoughtful, patient investing.</h1>
+	</div>
+		<div class="hero-navigation">
+			<ul role="menu">
+				<li role="menuitem">
+					<a data-section="section-756f6241-2074-7375-0000-000000000000">About us</a>
+				</li>
+				<li role="menuitem">
+					<a data-section="section-6c696850-736f-706f-6879-000000000000">Philosophy</a>
+				</li>
+				<li role="menuitem">
+					<a data-section="section-6c627550-6369-7461-696f-6e7300000000">Publications</a>
+				</li>
+				<li role="menuitem">
+					<a data-section="section-74737553-6961-616e-6269-6c6974790000">Sustainability</a>
+				</li>
+			</ul>
+		</div>
+</div>
+
+
+<div class="home-sections-wrap">
+	<div class="container">
+		<div class="inner-indented">
+			<section class="home-section section-756f6241-2074-7375-0000-000000000000">
+				<div class="section-header">
+					<h2>About us</h2>
+					<span class="header-overlay">About us</span>
+				</div>
+					<div class="home-item-content">
+						<div class="rte-content">
+<p>Marathon Asset Management is an independent, privately owned investment management firm based in London. Founded in 1986, Marathon has successfully applied longer-term and often contrarian strategies in its equity investments around the globe on behalf of its institutional client base.</p>
+<p><span>The&nbsp;</span><em><span style="color: #8f2829;">Purpose, Vision and Values statement<span>&nbsp;</span></span></em><span>codifies&nbsp;Marathon's corporate goals and behaviours for clients, staff, and all stakeholders in our firm. Please&nbsp;</span><a rel="noopener" href="media/maxnxqna/marathon-purpose-vision-and-values.pdf" target="_blank" title="Marathon Purpose, Vision and Values">click here</a><span>&nbsp;to see the full statement.&nbsp;</span><span>The statement also reflects the need to ensure that our business and staff</span><span>&nbsp;exhibit the right attributes to help deliver good conduct leading to positive, client-centric outcomes.</span></p>						</div>
+					</div>
+			</section>
+		</div>
+	</div>
+</div>
+
+<div class="home-sections-wrap">
+	<div class="container">
+		<div class="inner-indented">
+			<section class="home-section section-6c696850-736f-706f-6879-000000000000">
+				<div class="section-header">
+					<h2>Philosophy</h2>
+					<span class="header-overlay">Philosophy</span>
+				</div>
+					<div class="home-item-content">
+						<div class="rte-content">
+<p><span class="intro">Over more than three decades, Marathon’s investment philosophy has evolved, but two simple ideas about how capitalism works in the long run have always been paramount. </span></p>								<div class="two-cols-content-module">
+									<div class="col">
+										<p>The first is the observation that high returns in industries tend to attract capital and competition, just as low returns repel them.  The resulting ebb and flow of capital affects long-term returns for shareholders in often predictable ways, what we call the capital cycle.  Since high levels of investment tend to be detrimental to shareholder returns over the long run, Marathon seeks to invest in companies with high returns sustained by barriers to entry deterring investment or companies with low returns in industries where investment is declining.</p>
+									</div>
+									<div class="col">
+										<p>The second guiding idea is that management skill in allocating capital is vital over the long-term.  The best managers understand and seek to alter the capital cycle in their industries through sensible reinvestment choices.  Decisions about new capital projects, acquisitions or disposals, and equity issuance or buybacks are critical to the ultimate outcome for shareholders.</p>
+									</div>
+								</div>
+						</div>
+					</div>
+			</section>
+		</div>
+	</div>
+</div>
+
+<div class="home-sections-wrap">
+	<div class="container">
+		<div class="inner-indented">
+			<section class="home-section section-6c627550-6369-7461-696f-6e7300000000">
+				<div class="section-header">
+					<h2>Publications</h2>
+					<span class="header-overlay">Publications</span>
+				</div>
+					<div class="home-item-content">
+						<div class="rte-content">
+<p><span class="intro">Marathon’s investment team write articles for the firm’s Global Investment Review which is sent to clients and their advisers eight times a year.</span></p>								<div class="two-cols-content-module">
+									<div class="col">
+										<p>The purpose of the review, or GIR, is to inform Marathon’s clients of the fund managers’ views on the investment environment around the world, often with particular stock examples.&nbsp; As well as identifying favoured areas for investment, the articles often highlight the excesses and peculiarities which regularly occur in stock markets, posing threats to investors.</p>
+<p>A selection of GIR articles have appeared in two books, namely Capital Account (2004) covering the years 1993-2002 and Capital Returns (2016) for the period 2002-2015. Both books benefited from the editorial skill of Edward Chancellor, the distinguished financial historian, who also provided insightful introductions to the two publications.</p>
+<p>&nbsp;</p>
+									</div>
+									<div class="col">
+										<p>In the summer of 2024, Marathon launched <strong>The Capital Cycle Podcast</strong> series.&nbsp; Each episode contains an interview with a member of Marathon's investment team who has authored a particular GIR article, thereby disseminating Marathon investment team member thoughts more broadly through a new and widely used medium. New episodes will follow the publication cadence of our GIRs. The interviews are conducted by Edward Chancellor.</p>
+<p>The podcast series and the accompanying GIR article for each episode can be accessed by visiting <a href="https://www.thecapitalcycle.co.uk/">www.TheCapitalCycle.co.uk</a></p>
+<p>The podcast series is also available on <a href="https://shows.acast.com/the-capital-cycle-podcast" title="Acast">Acast</a>, <a href="https://podcasts.apple.com/gb/podcast/the-capital-cycle-podcast/id1760792349" title="Apple">Apple</a>, <a href="https://open.spotify.com/show/0XJtD5WKpH1CInIb90PTgi?si=5bf6aefd15ce4164&amp;nd=1&amp;dlsi=af14258830ec42c8" title="Spotify" data-anchor="?si=5bf6aefd15ce4164&amp;nd=1&amp;dlsi=af14258830ec42c8">Spotify</a>, <a href="https://music.amazon.co.uk/podcasts/5222d09c-bfe3-4cdd-9c68-ee030e6efd2c/the-capital-cycle-podcast" title="Amazon">Amazon</a> and other popular podcast streaming platforms.</p>
+									</div>
+								</div>
+						</div>
+					</div>
+			</section>
+		</div>
+	</div>
+</div>
+
+	<div class="home-quote">
+		<div class="container">
+			<div class="home-quote-box">
+				<div class="quote-images">
+							<div class="item">
+								<img src="media/1002/02.png" />
+							</div>
+							<div class="item">
+								<img src="media/1002/02.png" />
+							</div>
+				</div>
+				<div class="quote-slider">
+						<div class="item">
+							<blockquote class="quote-holder">
+								<p>
+									Their Global Investment Review is must reading in our firm.  Capital Account should be studied by every serious investor.
+								</p>
+									<span class="author">
+										<strong>Bill Miller</strong>,<br /> former CEO, Legg Mason Funds Management
+									</span>
+							</blockquote>
+						</div>
+						<div class="item">
+							<blockquote class="quote-holder">
+								<p>
+									I read Capital Returns in one sitting.  I wish this book had been available when I started in the business.  One of the best books on investment I&#x2019;ve ever read.
+								</p>
+									<span class="author">
+										<strong>Russell Napier</strong>,<br /> author of Anatomy of the Bear
+									</span>
+							</blockquote>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="home-sections-wrap">
+	<div class="container">
+		<div class="inner-indented">
+			<section class="home-section section-74737553-6961-616e-6269-6c6974790000">
+				<div class="section-header">
+					<h2>Sustainability</h2>
+					<span class="header-overlay">Sustainability</span>
+				</div>
+					<div class="home-item-content">
+						<div class="rte-content">
+<p>As an active long-term investor, sustainability has always been an integral part of Marathon’s investment decision-making process. Marathon’s primary objective – the fiduciary duty to add value within clients’ agreed risk parameters – is enhanced by considering material ESG issues.&nbsp;<span>Please&nbsp;</span><a href="sustainability/index.html" title="Sustainability">click here</a><span>&nbsp;for more information.</span></p>
+<p>Marathon’s current Sustainability &amp; Climate Report can be found <a rel="noopener" href="media/unmeu3y0/sustainability-climate-report-tcfd-aligned.pdf" target="_blank" title="Sustainability &amp; Climate Report (TCFD aligned)">here</a>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 class="intro"><span>Important Legal &amp; Regulatory Information</span></h3>
+<p>Please<span>&nbsp;</span><a rel="noopener noreferrer" href="legal-notice/index.html" target="_blank" title="Legal Notice">click here</a><span>&nbsp;</span>to view Marathon’s regulatory disclosures, details of the regulations under which we operate and the terms and conditions of use for the website.</p>
+<p>&nbsp;</p>								<div class="two-cols-content-module">
+									<div class="col">
+										
+									</div>
+									<div class="col">
+										<p>&nbsp;</p>
+<p>&nbsp;</p>
+									</div>
+								</div>
+						</div>
+					</div>
+			</section>
+		</div>
+	</div>
+</div>
+
+		</main>
+
+		
+<footer class="footer">
+    <div class="container">
+        <p>
+            &#xA9; 2025 Marathon Asset Management 
+
+        </p>
+            <ul role="menu">
+                <li role="menuitem">
+                    <a href="fund-prices/index.html" target="">Fund Prices</a>
+                </li>
+                <li role="menuitem">
+                    <a href="statement-of-tax-strategy/index.html" target="_blank">Statement of Tax Strategy</a>
+                </li>
+                <li role="menuitem">
+                    <a href="privacy-cookie-policy/index.html" target="">Privacy &amp; Cookie Policy</a>
+                </li>
+                <li role="menuitem">
+                    <a href="legal-notice/index.html" target="">Legal/Regulatory Notice</a>
+                </li>
+                <li role="menuitem">
+                    <a href="modern-slavery-statement/index.html" target="_blank">Modern Slavery Statement</a>
+                </li>
+            </ul>
+    </div>
+</footer>
+
+	</div>
+
+	<script nonce="m7ZMaVvocDSc/wvfbvZwypWGk3X1qdZwN818daqJ8G4=" src="sb/site-scripts.js.v1"></script>
+	
+
+	<!-- Google Analytics) -->
+	
+	<!-- Google Analytics) -->
+
+</body>
+
+<!-- Mirrored from www.marathon.co.uk/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Mar 2025 23:09:37 GMT -->
+</html>

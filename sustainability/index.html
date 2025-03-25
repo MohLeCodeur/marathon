@@ -1,0 +1,281 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- Mirrored from www.marathon.co.uk/sustainability/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Mar 2025 23:09:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" href="../favicon.ico" />
+	<title>Sustainability | Marathon London</title>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="canonical" href="index.html">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900">
+	<link rel="stylesheet" href="../css/styled882.css?v=Fd3f0XFBpHHPdH8P2gW-Dj62pnboBWRgL9UTkHRXjFw">
+
+	
+	
+</head>
+
+
+<body>
+	<script nonce="E03YGy6ZjV5cl8PzOtt+mciL4rDRyxoVzfPFdpCkqj4=" type = "text/javascript" >
+    var config = {
+        apiKey: '89789d071d481b8dfb074a8766005961b088cf25',
+     product: 'PRO_MULTISITE',
+        initialState: "open",
+        necessaryCookies: ['UMB-XSRF-TOKEN'],
+        theme: 'light',
+        position: 'left',
+        acceptButton: true,
+        rejectButton: true,
+        consentCookieExpiry: 90,
+	 branding: {
+             fontFamily: "Playfair Display,Roboto,Arial,Helvetica,sans-serif",
+            fontColor: "#676767",
+            fontSizeTitle: "20px",
+            fontSizeIntro: "14px",
+            fontSizeHeaders: "20px",
+            fontSize: "14px",
+            acceptText: "#fff",	
+            acceptBackground: "#8f2829",
+            rejectText: "#fff",
+            rejectBackground: "#8f2829",
+            backgroundColor: "#e1e1e1",
+	    alertBackground: "#8f2829",
+	    alertText: "#fff",
+            toggleText: "#fff",
+            toggleColor: "#fff",
+            toggleBackground: "#8f2829",
+            removeAbout: true
+        },
+        text: {
+            notifyTitle: "Our use of cookies",
+            notifyDescription: "We use cookies to make the site work and help us make it better. By clicking accept, weâ€™ll set recommended analytics cookies. Or, you can ignore or close this message and weâ€™ll set only the recommended ones.",
+            accept: "Accept",
+            reject: "Reject",
+            settings: "Settings",
+            necessaryTitle: "Necessary cookies",
+            necessaryDescription: "Necessary cookies enable core functionality such as security, network management, and accessibility. You may disable these by changing your browser settings, but this may affect how the website functions.",
+            title: "Our use of cookies",
+            intro: "We use necessary cookies to make our site work. We\u0027d also like to set optional analytics cookies to help us improve it. Using this tool will set a cookie on your device to remember your preferences.",
+            acceptRecommended: "accept",
+            acceptSettings: "Accept",
+            rejectSettings: "Reject",
+            closeLabel: "",
+        },
+        statement: {
+            description: "For more detailed information about the cookies we use, see our",
+            name: "Cookies page",
+            url: "/privacy-cookie-policy",
+            updated: "21/11/2019",
+        },        
+        optionalCookies: [{
+            name: "analytics",
+            label: "Analytics cookies",
+            description: "We\u0027d like to set Google Analytics cookies to help us to improve our website by collecting and reporting information on how you use it. The cookies collect information in a way that does not directly identify anyone. If you choose to switch these cookies off (by moving the slide bar to 'Off') we will not be able to track, on any anonymous basis, how many visitors we have to our site, and therefore monitor its performance. For more information on how these cookies work, please see our \u0027Cookies page\u0027.",
+            cookies: ["_ga","_gid","_gat"],
+            recommendedState: true,
+			lawfulBasis: "consent",
+            onAccept: function() {
+                (function(w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push({
+                        'gtm.start': new Date().getTime(),
+                        event: 'gtm.js'
+                    });
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s),
+                        dl = l != 'dataLayer' ? '&l=' + l : '';
+                    j.async = true;
+                    j.src = '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-55X5GQD');
+                if (typeof(BrowseAloud) != "undefined") {
+                    BrowseAloud.analytics = BrowseAloud.org_analytics;
+                }
+            },
+            onRevoke: function() {
+                window['ga-disable-GTM-55X5GQD'] = true;
+                if (typeof(BrowseAloud) != "undefined") {
+                    BrowseAloud.analytics = BrowseAloud.no_analytics;
+                }
+            },            
+        },	
+		]
+    };
+
+
+var loops = 0;
+var threshold = 30;
+
+function CookieControlInit() {
+    if (typeof CookieControl !== "undefined" && window.jQuery && $('#ccc').length > 0) {
+        if ($('header[role=banner]').length > 0) {
+            $('#ccc').insertBefore($('header[role=banner]'));
+            $('#ccc').css('z-index', 9999);
+        }
+        $('#ccc-optional-categories .optional-cookie').each(function() {
+            var label = $('.optional-cookie-header', $(this)).text();
+            var idAttr = (label.split(' ').join('_')).toLowerCase();
+            $('<span/>', {
+                'class': 'invisible',
+                for: idAttr,
+                text: label + " toggle",
+            }).prependTo($('.checkbox-toggle-label', $(this)));
+            $('.checkbox-toggle-input', $(this)).attr('id', idAttr);
+
+        });
+    } else {
+        if (loops++ < threshold) {
+            setTimeout(CookieControlInit, 300);
+        }
+    }
+}
+var script = document.createElement('script');
+script.onload = function() {
+    CookieControl.load(config);
+    CookieControlInit();
+};
+script.crossorigin = "anonymous";
+script.src = '../../cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js';
+document.head.appendChild(script);
+
+var onPageStyle = "";
+if (config.text.acceptRecommended == "") {
+    onPageStyle += "#ccc-recommended-settings{display:none;}"
+}
+if (config.text.rejectSettings == "") {
+    onPageStyle += "#ccc-reject-settings{display:none;}"
+}
+if (onPageStyle != "") {
+    var style = document.createElement('style');
+    style.innerHTML = onPageStyle;
+    document.head.appendChild(style);
+}
+</script>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55X5GQD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<div class="wrapper">
+
+		
+<header class="header" aria-haspopup="true">
+    <div class="header-inner">
+        <nav class="left">
+                <a href="../contact-us/index.html">Contact Us</a>
+        </nav>
+
+        <a href="../index.html" class="logo">
+                <img src="../media/1016/logo.svg" class="logo-color" />
+                <img src="../media/1015/logo-white.svg" class="logo-white" />
+                <img src="../media/1014/logo-emblem.svg" alt="Marathon" class="logo-emblem" />
+        </a>
+
+        <div class="right">
+                <button type="button" class="btn-client js-open-client"><span>Client area</span></button>
+        </div>
+    </div>
+
+        <div class="client-overlay-wrap"  aria-hidden="true" >
+                <div class="client-inner">
+                    <button type="button" class="close-overlay"><span class="font-ico-close"></span><span class="sr-only">Close client overlay</span></button>
+                    <h3>Sign in below</h3>
+
+                    
+
+<form action="https://www.marathon.co.uk/sustainability/" class="form" enctype="multipart/form-data" id="forma5bfd6dded0a4012b34582452a85a4b4" method="post"><div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div><input class="in-text" data-val="true" data-val-required="The User name field is required." id="client-email" name="Username" placeholder="Email address" type="text" value="" /><input class="in-text" data-val="true" data-val-length="The field Password must be a string with a maximum length of 256." data-val-length-max="256" data-val-required="The Password field is required." id="client-password" maxlength="256" name="Password" placeholder="Password" type="password" value="" />    <button type="submit" class="btn keep-overlay-open">Login</button>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8GqEOhd3m2pMgn4ccNZWJyG8H3wZKj6xzNQZOLuJaF4F5EzPzq3swKD497-WBBQqWnDe3TC39OdNzQgQjCyRLb6W_KATrO2Q-FZQRyTHbjg-qkJt0SKqpP2b8p0l7WvI0pVxgUsIP7uQHfZZP0Y9aKc" /><input name="ufprt" type="hidden" value="CfDJ8GqEOhd3m2pMgn4ccNZWJyFSC7lMYxX7NJAGExTo2kj4U7aV9bl-ZaXvk6gS946Y2mt5Zf2DOhhWZpyRw6gDE_oPhOfXjQk2thP6AAxrBp2I3hJ8AYAFr5MrgKEKtvPq3U6qIxz4gO8EDyoIbWD9aK4" /></form><div class="user-links">
+    <a href="../account/password-reset/index.html">Forgot your password?</a>
+</div>
+
+                </div>
+            </div>
+</header>
+
+		<main class="content">
+			
+<div class="standard-page">
+    <div class="container">
+        <div class="inner-indented">
+            <div class="section-header">
+                <h1>Sustainability</h1>
+                <span class="header-overlay">Sustainability</span>
+            </div>
+                <div class="rte-content">
+
+<p>&nbsp;</p>
+<p>Marathon has created a Sustainability Charter; a leadership statement in which Portfolio Managers commit to consider Environmental, Social and Governance issues at all stages of the investment process. The charter encompasses Marathon’s approach to investing, engagement and proxy voting - in which sustainability is considered in the context of adding value for clients over the long-term. The Sustainability Charter can be viewed <a rel="noopener noreferrer" href="../sustainability-charter/index.html" target="_blank" title="Sustainability Charter">here</a>.</p>
+<p>Following the creation of the Charter, Marathon has published a Sustainability &amp; Climate Report, which seeks to provide both a high-level explanation of how Marathon conceives of the issue philosophically and examples of its application in practice. The report also provides climate information (aligned with international accounting standards and fulfilling Marathon's regulatory obligations) on both Marathon as a business and on the key strategies offered to investors. The report can be found&nbsp;<a href="../media/unmeu3y0/sustainability-climate-report-tcfd-aligned.pdf" title="Sustainability &amp; Climate Report (TCFD aligned)">here.</a></p>
+<h2>Environmental, Social and Governance</h2>
+<p>Environmental, Social and Governance (ESG) issues have a greater bearing on the long-term outcome than they do over the next 6-12 months, the typical investor time-frame. Marathon investors aim to consider all material issues and weigh them against what is reflected in the current market price of a stock. It is important to note that portfolio managers integrate assessment of ESG within their overall analysis of stocks, rather than treating it as a stand-alone issue in making investment decisions. These decisions are not influenced by a top-down investment committee, an in-house ‘responsible investing/proxy voting team’, or a marketing department – as none of these exist at Marathon. A company with ESG concerns could still be an attractive investment, if the issues are outweighed by other considerations, including valuation.</p>
+<p>For further information on Marathon's approach to ESG please click <a rel="noopener noreferrer" href="../esg-policy/index.html" target="_blank" title="ESG policy">here</a>&nbsp;to&nbsp;view Marathon's ESG Policy.</p>
+<h2>Engagement and Voting</h2>
+<p>Marathon's primary focus is finding companies that it believes are able to generate good returns over time, but the firm also has a strong track record of engagement with company management, to encourage long-term value creation. Portfolio managers feel this is more effective than an activist approach of taking outsize bets with clients’ assets and then publicly criticising companies, in an effort to force short-term changes upon them. Initially, Marathon’s preference is to engage privately with company management, to better understand strategic plans and capital allocation; but if necessary, the firm will consider escalating engagement and stewardship activities. Portfolio managers have always voted their own proxies at Marathon, as we consider the ability to influence management to be an integral part of the investment management function.</p>
+<p>For further details about Marathon’s proxy voting activity and policy click <a rel="noopener noreferrer" href="proxy-voting-dashboard/index.html" target="_blank" title="Proxy Voting Dashboard">here.</a></p>
+<h2>Commitments</h2>
+<p><span></span>In addition to the internal initiatives discussed above, Marathon is also committed to working with various external organisations, as well as being subject to some specific regulation related to sustainability. We list the key ones below, with links to any responses or required documentation where relevant.</p>
+<ul>
+<li style="padding-bottom: 1em;"><strong>Principles for Responsible Investment (PRI):</strong><span>&nbsp;</span>Marathon&nbsp;is a signatory of the UN-supported Principles for Responsible Investment.&nbsp; You can find our latest Assessment Report<span>&nbsp;</span><a rel="noopener noreferrer" href="../pri-assessment-report/index.html" target="_blank" title="PRI Assessment Report">here</a><span>&nbsp;</span>and the current Transparency Report<span>&nbsp;</span><a rel="noopener noreferrer" href="../pri-transparency-report-questionnaire/index.html" target="_blank" title="PRI Transparency Report (Questionnaire)">here</a>.</li>
+<li><strong>Climate reporting: </strong>Given the focus on climate change by a number of investors, regulators and governments around the world, Marathon encourages companies to report on climate related risks in a uniform way, improving market transparency and stability. Marathon originally became a supporter of the Task Force on Climate-related Financial Disclosures (TCFD) in March 2021, and continues to encourage adoption of its disclosures following the disbandment of TCFD and the adoption of its recommendations by the International Financial Reporting Standards Foundation. Marathon's current Sustainability &amp; Climate Report can be found <a rel="noopener" href="../media/unmeu3y0/sustainability-climate-report-tcfd-aligned.pdf" target="_blank" title="Sustainability &amp; Climate Report (TCFD aligned)">here</a>. As a result of this commitment Marathon decided to access its own corporation emissions and has now been certified as a CarbonNeutral® company (details can be found&nbsp;<a rel="noopener noreferrer" href="../carbonneutral-certification-announcement/index.html" target="_blank" title="CarbonNeutral Certification Announcement">here</a>).</li>
+</ul>
+<ul>
+<li><strong>Stewardship Codes: </strong>Marathon is a signatory of both the UK and Japanese Stewardship Codes. Our current stewardship code statements can be found&nbsp;<a rel="noopener noreferrer" href="../uk-stewardship-code/index.html" target="_blank" title="UK Stewardship Code.pdf">here</a>&nbsp;(UK) and&nbsp;<a rel="noopener noreferrer" href="../japan-stewardship-code/index.html" target="_blank" title="Japan Stewardship Code">here</a>&nbsp;(Japan).</li>
+</ul>
+<h2>Sustainable Finance Disclosure Regulation</h2>
+<p><span>Maratho</span><span>n’s Sustainability Risk Policy can be found&nbsp;</span><a rel="noopener noreferrer" href="../sustainability-risk-policy/index.html" target="_blank" title="Sustainability Risk Policy">here</a><span>.</span></p>                </div>   
+        </div>
+    </div>
+</div>
+		</main>
+
+		
+<footer class="footer">
+    <div class="container">
+        <p>
+            &#xA9; 2025 Marathon Asset Management 
+
+        </p>
+            <ul role="menu">
+                <li role="menuitem">
+                    <a href="../fund-prices/index.html" target="">Fund Prices</a>
+                </li>
+                <li role="menuitem">
+                    <a href="../statement-of-tax-strategy/index.html" target="_blank">Statement of Tax Strategy</a>
+                </li>
+                <li role="menuitem">
+                    <a href="../privacy-cookie-policy/index.html" target="">Privacy &amp; Cookie Policy</a>
+                </li>
+                <li role="menuitem">
+                    <a href="../legal-notice/index.html" target="">Legal/Regulatory Notice</a>
+                </li>
+                <li role="menuitem">
+                    <a href="../modern-slavery-statement/index.html" target="_blank">Modern Slavery Statement</a>
+                </li>
+            </ul>
+    </div>
+</footer>
+
+	</div>
+
+	<script nonce="E03YGy6ZjV5cl8PzOtt&amp;#x2B;mciL4rDRyxoVzfPFdpCkqj4=" src="../sb/site-scripts.js.v1"></script>
+	
+
+	<!-- Google Analytics) -->
+	
+	<!-- Google Analytics) -->
+
+</body>
+
+<!-- Mirrored from www.marathon.co.uk/sustainability/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Mar 2025 23:09:49 GMT -->
+</html>
