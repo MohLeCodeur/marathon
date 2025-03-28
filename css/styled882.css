@@ -2645,6 +2645,7 @@ a.link-cta-left::after {
   min-height: 100vh;
   position: relative;
 }
+
 .home-hero-banner .hero-banner-content {
   left: 50%;
   position: absolute;
@@ -2663,6 +2664,15 @@ a.link-cta-left::after {
   line-height: 85px;
   margin: 0 auto;
   max-width: 700px;
+}
+.home-hero-banner h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 85px;
+  margin: 0 auto;
+  max-width: 700px;
+  top: 24%;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-hero-banner .hero-banner-content {
@@ -6098,7 +6108,7 @@ div.contact-info {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 270px;
+  width: 170px;
 }
 .header .logo .logo-emblem,
 .header .logo .logo-white {
