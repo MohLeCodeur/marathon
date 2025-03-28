@@ -6382,6 +6382,13 @@ div.contact-info {
     color: #fff;
   }
 }
+@media screen and (min-height: 600px) and (max-height: 700px) {
+  .header .logo {
+    width: 110px;
+    
+  }
+}
+
 .btn-client {
   background-color: #8f2829;
   border-radius: 20px;
