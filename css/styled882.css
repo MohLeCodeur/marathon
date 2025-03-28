@@ -2672,7 +2672,11 @@ a.link-cta-left::after {
   line-height: 85px;
   margin: 0 auto;
   max-width: 700px;
+  font-family: "Playfair Display", serif;
   top: 24%;
+}
+.home-hero-banner h2 .different-font {
+  font-family: "Roboto", sans-serif; /* Remplacez par la police de votre choix */
 }
 .home-hero-banner h3 {
   color: #fff;
@@ -2681,6 +2685,7 @@ a.link-cta-left::after {
   line-height: 85px;
   margin: 0 auto;
   max-width: 700px;
+  font-family: "Playfair Display", serif;
   
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
