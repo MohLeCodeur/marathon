@@ -2756,7 +2756,7 @@ a.link-cta-left::after {
 }
 @media only screen and (max-width: 767px) {
   .hero-navigation {
-    bottom: 85px;
+    bottom: 20px;
   }
   .hero-navigation.sticky-page-nav {
     padding: 16px 25px 15px;
