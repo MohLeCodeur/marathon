@@ -126,12 +126,46 @@ background-image: url(best.jpg);
     color: #fff;
     text-align: left; /* Ensure text aligns left */
 }
+.secondeimage {
+background-image: url(building.webp);
+    background-size: cover;
+    background-position: center center;
+    min-height: 70vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: flex-start; /* Align text to the left */
+    color: #fff;
+    text-align: left; /* Ensure text aligns left */
+}
+.oustroupistache {
+background-image: url(build.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 70vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: flex-start; /* Align text to the left */
+    color: #fff;
+    text-align: left; /* Ensure text aligns left */
+}
 
 .hero-content {
     max-width: 600px; /* Limit width of text */
 }
 
 .hero-section .subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+.secondeimage .subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+.oustroupistache .subtitle {
     font-size: 1.1rem;
     font-weight: 300;
     margin-bottom: 0.5rem;
@@ -364,7 +398,18 @@ background-image: url(best.jpg);
        margin: 5px 0;
     }
 
+
     .hero-section {
+        min-height: 50vh;
+        text-align: center;
+        justify-content: center; /* Center text on mobile */
+    }
+    .oustroupistache {
+        min-height: 50vh;
+        text-align: center;
+        justify-content: center; /* Center text on mobile */
+    }
+    .secondeimage {
         min-height: 50vh;
         text-align: center;
         justify-content: center; /* Center text on mobile */

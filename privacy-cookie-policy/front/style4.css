@@ -126,6 +126,28 @@ background-image: url(realest.webp);
     color: #fff;
     text-align: left; /* Ensure text aligns left */
 }
+.oustroupistache {
+background-image: url(village.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 70vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: flex-start; /* Align text to the left */
+    color: #fff;
+    text-align: left; /* Ensure text aligns left */
+}
+.oustroupistache2 {
+background-image: url(construction.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 70vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: flex-start; /* Align text to the left */
+    color: #fff;
+    text-align: left; /* Ensure text aligns left */
+}
 
 .hero-content {
     max-width: 600px; /* Limit width of text */
@@ -369,7 +391,16 @@ background-image: url(realest.webp);
         text-align: center;
         justify-content: center; /* Center text on mobile */
     }
-
+    .oustroupistache {
+        min-height: 50vh;
+        text-align: center;
+        justify-content: center; /* Center text on mobile */
+    }
+    .oustroupistache2 {
+        min-height: 50vh;
+        text-align: center;
+        justify-content: center; /* Center text on mobile */
+    }
     .hero-content {
         padding: 0 15px; /* Add padding on mobile */
     }
