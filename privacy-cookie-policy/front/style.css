@@ -124,7 +124,7 @@ background-image: url(best.jpg);
     align-items: center; /* Vertically center content */
     justify-content: flex-start; /* Align text to the left */
     color: #fff;
-    text-align: left; /* Ensure text aligns left */
+    text-align: center; /* Ensure text aligns left */
 }
 .secondeimage {
 background-image: url(building.webp);
@@ -135,7 +135,7 @@ background-image: url(building.webp);
     align-items: center; /* Vertically center content */
     justify-content: flex-start; /* Align text to the left */
     color: #fff;
-    text-align: left; /* Ensure text aligns left */
+    text-align: center; /* Ensure text aligns left */
 }
 .oustroupistache {
 background-image: url(build.jpg);
@@ -146,7 +146,7 @@ background-image: url(build.jpg);
     align-items: center; /* Vertically center content */
     justify-content: flex-start; /* Align text to the left */
     color: #fff;
-    text-align: left; /* Ensure text aligns left */
+    text-align: center; /* Ensure text aligns left */
 }
 
 .hero-content {

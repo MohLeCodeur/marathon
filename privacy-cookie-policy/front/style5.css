@@ -124,7 +124,7 @@ background-image: url(marketing.webp);
     align-items: center; /* Vertically center content */
     justify-content: flex-start; /* Align text to the left */
     color: #fff;
-    text-align: left; /* Ensure text aligns left */
+    text-align: center; /* Ensure text aligns left */
 }
 .oustroupistache {
 background-image: url(belle.jpg);
@@ -135,7 +135,7 @@ background-image: url(belle.jpg);
     align-items: center; /* Vertically center content */
     justify-content: flex-start; /* Align text to the left */
     color: #fff;
-    text-align: left; /* Ensure text aligns left */
+    text-align: center; /* Ensure text aligns left */
 }
 .oustroupistache2 {
 background-image: url(lastblue.jpg);
@@ -146,7 +146,7 @@ background-image: url(lastblue.jpg);
     align-items: center; /* Vertically center content */
     justify-content: flex-start; /* Align text to the left */
     color: #fff;
-    text-align: left; /* Ensure text aligns left */
+    text-align: center; /* Ensure text aligns left */
 }
 
 .hero-content {

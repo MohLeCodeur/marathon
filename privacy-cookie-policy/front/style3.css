@@ -124,7 +124,7 @@ background-image: url(loan.webp);
     align-items: center; /* Vertically center content */
     justify-content: flex-start; /* Align text to the left */
     color: #fff;
-    text-align: left; /* Ensure text aligns left */
+    text-align: center; /* Ensure text aligns left */
 }
 .oustroupistache {
 background-image: url(house.jpg);
@@ -135,7 +135,7 @@ background-image: url(house.jpg);
     align-items: center; /* Vertically center content */
     justify-content: flex-start; /* Align text to the left */
     color: #fff;
-    text-align: left; /* Ensure text aligns left */
+    text-align: center; /* Ensure text aligns left */
 }
 
 .hero-content {
