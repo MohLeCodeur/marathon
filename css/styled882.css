@@ -6968,54 +6968,93 @@ div.contact-info {
     display: none;
   }
 }
+/* Styles généraux du Footer */
 .footer {
   width: 100%;
-  float: left;
-  background-color: #fff;
+  /* float: left; <-- Supprimé */
+  background-color: #8f2829;
   border-top: 1px solid #e0e0e0;
-  color: #757575;
+  color: #ffffff;
   font-size: 14px;
-  height: 80px;
-  padding-top: 28px;
+  /* height: 80px; <-- Supprimé (la hauteur sera automatique) */
+  padding: 20px 0; /* Ajustement du padding (haut/bas, gauche/droite) */
+  box-sizing: border-box; /* Bonne pratique pour inclure padding/border dans la largeur/hauteur */
+
+  /* --- Ajout Flexbox pour structurer le footer en 2 lignes --- */
+  display: flex;
+  flex-direction: column; /* Aligne les enfants (.top-row et .copyright) verticalement */
+  align-items: center; /* Centre les enfants horizontalement (utile pour .copyright) */
 }
+
+/* Styles pour la ligne supérieure (logo + liens) */
+.footer .top-row {
+  width: 100%; /* Prend toute la largeur disponible */
+  max-width: 1200px; /* Optionnel: Limite la largeur sur grands écrans */
+  padding: 0 20px; /* Ajoute un peu d'espace sur les côtés */
+  box-sizing: border-box;
+
+  /* --- Ajout Flexbox pour positionner logo et liste --- */
+  display: flex;
+  justify-content: space-between; /* Espace au maximum entre le logo (début) et la liste (fin) */
+  align-items: center; /* Centre verticalement le logo et la liste */
+  margin-bottom: 15px; /* Espace entre la ligne du haut et le copyright */
+}
+
+/* Styles pour le logo (pas de changement majeur nécessaire) */
+.footer .logo {
+  /* Pas besoin de float */
+}
+
+/* Styles pour la liste des liens */
+.footer ul {
+  /* float: right; <-- Supprimé */
+  list-style: none; /* Enlève les puces */
+  padding: 0; /* Enlève le padding par défaut */
+  margin: 0; /* Enlève la marge par défaut */
+  display: flex; /* Rend les <li> enfants flexibles */
+  gap: 15px; /* Espace entre les éléments de la liste (alternative aux marges/::before) */
+}
+
+.footer ul li {
+  /* float: left; <-- Supprimé */
+  /* Pas besoin de float si ul est en display: flex */
+}
+
+/* Styles pour les séparateurs (si vous voulez les garder) */
+/* On peut les enlever si 'gap' est suffisant */
+.footer ul li:not(:first-child)::before { /* Applique seulement aux li sauf le premier */
+  content: "|";
+  display: inline-block; /* Ou juste laisser tel quel si ça fonctionne */
+  margin-right: 15px; /* Ajuster l'espacement si 'gap' n'est pas utilisé */
+  color: #ffffff; /* Assurez la couleur */
+  vertical-align: middle; /* Alignement vertical */
+}
+
+/* Styles pour les liens (pas de changement majeur) */
 .footer a {
-  color: #757575;
+  color: #ffffff;
+  text-decoration: none; /* Bonne pratique */
 }
 .footer a:hover {
-  color: #8f2829;
+  color: #dddddd; /* Léger changement pour le survol */
+  text-decoration: underline; /* Optionnel */
 }
-.footer p {
-  float: left;
+
+/* Styles pour le texte de copyright */
+.footer .copyright {
+  /* float: left; <-- Supprimé */
+  width: 100%; /* Prend toute la largeur pour que text-align fonctionne */
+  text-align: center; /* Centre le texte */
+  margin: 0; /* Réinitialise la marge */
+  padding: 0; /* Réinitialise le padding */
+  /* margin-top: 15px; <-- Géré par margin-bottom sur .top-row */
 }
-.footer p a {
-  font-weight: 700;
-  position: relative;
-}
-.footer p a::before {
-  content: "|";
-  display: inline-block;
-  font-weight: 400;
-  margin: -1px 7px 0 3px;
-  vertical-align: middle;
-}
-.footer p a:hover::before {
-  color: #757575;
-}
-.footer ul {
-  float: right;
-}
-.footer ul li {
-  float: left;
-}
-.footer ul li::before {
-  content: "|";
-  display: inline-block;
-  margin: -1px 8px 0 9px;
-  vertical-align: middle;
-}
-.footer ul li:first-child::before {
-  display: none;
-}
+
+/* Suppression des styles devenus inutiles */
+/* .footer p { float: left; } <-- Supprimé */
+/* .footer p a ... <-- Supprimé (si pas utilisé) */
+/* .footer ul li::before { ... } <-- Déjà géré/modifié ci-dessus */
+/* .footer ul li:first-child::before { display: none; } <-- Géré par :not(:first-child) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer {
     height: auto;
