@@ -76,7 +76,7 @@ textarea {
 body {
   margin: 0;
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 2;
   -moz-osx-font-smoothing: grayscale;
 }
 ::-moz-selection {
@@ -3092,7 +3092,7 @@ a.link-cta-left::after {
 .rte-content h3 {
   font-weight: 400;
   margin: 0 0 24px;
-  text-align: left;
+  /* text-align: left; */
 }
 .rte-content h4 {
   color: #1c2930;
