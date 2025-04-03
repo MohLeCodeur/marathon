@@ -6389,6 +6389,8 @@ div.contact-info {
   }
 }
 
+
+
 .btn-client {
   background-color: #8f2829;
   border-radius: 20px;
@@ -7055,6 +7057,23 @@ div.contact-info {
 /* .footer p a ... <-- Supprimé (si pas utilisé) */
 /* .footer ul li::before { ... } <-- Déjà géré/modifié ci-dessus */
 /* .footer ul li:first-child::before { display: none; } <-- Géré par :not(:first-child) */
+/* Style pour le séparateur blanc */
+.footer .footer-separator {
+  width: 90%;             /* Largeur du trait (ajuste si besoin) */
+  max-width: 1100px;      /* Optionnel: Limite la largeur max */
+  border: none;           /* Enlève la bordure par défaut du hr */
+  border-top: 2px solid #ffffff; /* Crée une ligne blanche de 2px d'épaisseur */
+  margin-top: 20px;       /* Espace au-dessus du trait */
+  margin-bottom: 20px;    /* Espace en dessous du trait */
+  height: 0;              /* Important quand on utilise border-top */
+}
+
+/* Ajustement potentiel: Enlever la marge du bas de top-row si le hr gère l'espace */
+.footer .top-row {
+  /* ... (styles existants) ... */
+   /* margin-bottom: 15px; */ /* Peut-être commenter ou supprimer cette ligne */
+                               /* si les marges du hr suffisent */
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer {
     height: auto;

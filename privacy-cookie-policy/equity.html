@@ -204,8 +204,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </a>
   
           <div class="right">
-                  <button type="button" class="btn-client js-open-client"><span>Client area</span></button>
-          </div>
+            <button type="button" class="btn-client js-open-client"><span>Client area</span></button>
+            <button type="button" class="hamburger"></button>
+    </div>
+         <style>
+
+.hamburger {
+display: none; /* Caché par défaut */
+}
+
+@media (max-width: 425px) {
+.hamburger {
+display: block; /* Affiche uniquement en dessous de 425px */
+width: 30px; /* Ajuste selon la taille de ton image */
+height: 30px;
+background-image: url('front/menu.png'); /* Assure-toi que le chemin est correct */
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+border: none;
+cursor: pointer;
+background-color: transparent; /* Supprime l’arrière-plan du bouton */
+margin-left: 80px; /* Ajuste la valeur selon ton besoin */
+}
+
+.hero-navigation {
+display: none; /* Cache le menu par défaut sur petits écrans */
+}
+
+.hero-navigation.active {
+display: block; /* Affiche le menu quand la classe "active" est ajoutée */
+}
+}
+@media (max-width: 425px) and (min-width: 410px) {
+.hamburger {
+margin-left: 80px;
+}
+}
+
+@media (max-width: 409px) and (min-width: 367px) {
+.hamburger {
+margin-left: 59px;
+}
+}
+
+@media (max-width: 320px) {
+.hamburger {
+margin-left: 33px;
+}
+}
+
+
+      </style>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const menuButton = document.querySelector(".hamburger");
+          const navMenu = document.querySelector(".hero-navigation");
+      
+          menuButton.addEventListener("click", function () {
+            navMenu.classList.toggle("active");
+          });
+        });
+      </script>
           <div class="hero-navigation sticky-page-nav">
                       <ul role="menu">
                         <li role="menuitem">
