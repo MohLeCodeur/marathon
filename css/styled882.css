@@ -7088,6 +7088,23 @@ div.contact-info {
    /* margin-bottom: 15px; */ /* Peut-être commenter ou supprimer cette ligne */
                                /* si les marges du hr suffisent */
 }
+.footer-contact {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.footer-contact a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-contact a:hover {
+  color: #dddddd;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer {
     height: auto;
