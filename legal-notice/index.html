@@ -179,7 +179,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img src="../media/1015/logo-white.svg" class="logo-white" />
                 <img
                   src="../media/1014/redlogo.png"
-                  alt="SM"
+                  alt="Marathon"
                   class="logo-emblem"
                   width="150"
                   height="35"
@@ -199,51 +199,174 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a href="../index.html" class="logo">
                         <img src="../media/1016/smco-modified.png" class="logo-color">
                         <img src="../media/1015/logo-white.svg" class="logo-white">
-                        <img src="../media/1014/redlogo.png" alt="SM" class="logo-emblem">
+                        <img src="../media/1014/redlogo.png" alt="Marathon" class="logo-emblem" >
                 </a>
         
                 <div class="right">
                         <button type="button" class="btn-client js-open-client"><span>Client area</span></button>
+                        <button type="button" class="hamburger"></button>
                 </div>
+                     <style>
+            
+    .hamburger {
+      display: none; /* Caché par défaut */
+    }
+    
+    @media (max-width: 425px) {
+      .hamburger {
+        display: block; /* Affiche uniquement en dessous de 425px */
+        width: 30px; /* Ajuste selon la taille de ton image */
+      height: 30px;
+      background-image: url('front/menu.png'); /* Assure-toi que le chemin est correct */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: none;
+      cursor: pointer;
+      background-color: transparent; /* Supprime l’arrière-plan du bouton */
+      margin-left: 80px; /* Ajuste la valeur selon ton besoin */
+      }
+    
+      .hero-navigation {
+        display: none; /* Cache le menu par défaut sur petits écrans */
+      }
+    
+      .hero-navigation.active {
+        display: block; /* Affiche le menu quand la classe "active" est ajoutée */
+      }
+    }
+    @media (max-width: 425px) and (min-width: 410px) {
+      .hamburger {
+        margin-left: 80px;
+      }
+    }
+    
+    @media (max-width: 409px) and (min-width: 367px) {
+      .hamburger {
+        margin-left: 59px;
+      }
+    }
+    @media (max-width: 366px) and (min-width: 344px) {
+      .hamburger {
+        margin-left: 50px;
+      }
+    }
+    @media (max-width: 343px) and (min-width: 38px) {
+      .hamburger {
+        margin-left: 37px;
+      }
+    }
+    
+    @media (max-width: 320px) {
+      .hamburger {
+        margin-left: 33px;
+      }
+    }
+    
+    
+                  </style>
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                      const menuButton = document.querySelector(".hamburger");
+                      const navMenu = document.querySelector(".hero-navigation");
+                  
+                      menuButton.addEventListener("click", function () {
+                        navMenu.classList.toggle("active");
+                      });
+                    });
+                  </script>
+                  
                 <div class="hero-navigation sticky-page-nav">
                             <ul role="menu">
+                              <li role="menuitem">
+                                <a href="../privacy-cookie-policy/collective.html" >COLLECTIVE MANAGEMENT</a>
+                              </li>
+                              <li role="menuitem">
+                                <a href="../privacy-cookie-policy/private.html">PRIVATE MANAGEMENT</a>
+                              </li>
                                 <li role="menuitem">
-                                    <a href="../index.html">About us</a>
+                                    <a href="../privacy-cookie-policy/equity.html">EQUITY</a>
                                 </li>
                                 <li role="menuitem">
-                                    <a href="collective.html" >COLLECTIVE MANAGEMENT</a>
+                                    <a href="../privacy-cookie-policy/loan.html">LOAN</a>
                                 </li>
                                 <li role="menuitem">
-                                    <a href="private.html">PRIVATE MANAGEMENT</a>
+                                    <a href="../privacy-cookie-policy/realestate.html">REAL ESTATE</a>
                                 </li>
                                 <li role="menuitem">
-                                    <a href="equity.html">EQUITY</a>
+                                    <a href="../privacy-cookie-policy/marketing.html">MARKETING</a>
                                 </li>
                                 <li role="menuitem">
-                                    <a href="loan.html">LOAN</a>
+                                  <a href="../privacy-cookie-policy/team.html">TEAM</a>
                                 </li>
                                 <li role="menuitem">
-                                    <a href="realestate.html">REAL ESTATE</a>
+                                    <a href="#"">PROPOSAL INVESTING</a>
                                 </li>
-                                <li role="menuitem">
-                                    <a href="marketing.html">MARKETING</a>
-                                </li>
-                                <li role="menuitem">
-                                    <a href="team.html">TEAM</a>
-                                </li>
-                            </ul>
+                              </ul>
                         </div>
             </div>
             </div>
-<form action="https://www.SM.co.uk/legal-notice/" class="form" enctype="multipart/form-data" id="forma6f03e4d280b43fba829527f998178a3" method="post"><div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
-</ul></div><input class="in-text" data-val="true" data-val-required="The User name field is required." id="client-email" name="Username" placeholder="Email address" type="text" value="" /><input class="in-text" data-val="true" data-val-length="The field Password must be a string with a maximum length of 256." data-val-length-max="256" data-val-required="The Password field is required." id="client-password" maxlength="256" name="Password" placeholder="Password" type="password" value="" />    <button type="submit" class="btn keep-overlay-open">Login</button>
-<input name="__RequestVerificationToken" type="hidden" value="CfDJ8GqEOhd3m2pMgn4ccNZWJyGcs7IRlC7oDBHz_e4-jWu8UpMHsGhD46i-aOe6AqT5be6w1I0idLTxkumctB3cPg87MJJsE74Us9HHG7fWbmv-YFDWbRUWG3fyLZYW852YRCOcL-ZSVYRg_B0-MJovF14" /><input name="ufprt" type="hidden" value="CfDJ8GqEOhd3m2pMgn4ccNZWJyFPdlqA_6yanctxXtQcqir9uMDHD-tRY10gA7fKnkALQml_pIZM4AX57QSDWa37xCNQlgYI8-IiEcgZnpfxz85totKY8es-SZPqDt_CRsr_hG78lA5-CWkc3v5qUB2owB4" /></form><div class="user-links">
-    <a href="../account/password-reset/index.html">Forgot your password?</a>
-</div>
-
+      <div class="client-overlay-wrap" aria-hidden="true">
+              <div class="client-inner">
+                <button type="button" class="close-overlay">
+                  <span class="font-ico-close"></span
+                  ><span class="sr-only">Close client overlay</span>
+                </button>
+                <h3>Sign in below</h3>
+    
+                <form
+                  action="https://www.marathon.co.uk/privacy-cookie-policy/"
+                  class="form"
+                  enctype="multipart/form-data"
+                  id="form13ff0327de4f4d2aa3806717c22782bf"
+                  method="post"
+                >
+                  <div class="validation-summary-valid" data-valmsg-summary="true">
+                    <ul>
+                      <li style="display: none"></li>
+                    </ul>
+                  </div>
+                  <input
+                    class="in-text"
+                    data-val="true"
+                    data-val-required="The User name field is required."
+                    id="client-email"
+                    name="Username"
+                    placeholder="Email address"
+                    type="text"
+                    value=""
+                  /><input
+                    class="in-text"
+                    data-val="true"
+                    data-val-length="The field Password must be a string with a maximum length of 256."
+                    data-val-length-max="256"
+                    data-val-required="The Password field is required."
+                    id="client-password"
+                    maxlength="256"
+                    name="Password"
+                    placeholder="Password"
+                    type="password"
+                    value=""
+                  />
+                  <button type="submit" class="btn keep-overlay-open">Login</button>
+                  <input
+                    name="__RequestVerificationToken"
+                    type="hidden"
+                    value="CfDJ8GqEOhd3m2pMgn4ccNZWJyHvNOkcYhza6wLupfqg9L5MjT8A8u6F98e4OOEGRkbud5jJ1p8q3I-0w6p0mX-5I6kG4tPb_50E3YIKs2s9srVeMkwLrP439Xx1wwHZ23NFxEyVBk_2J6ARo0VwbQ31kxs"
+                  /><input
+                    name="ufprt"
+                    type="hidden"
+                    value="CfDJ8GqEOhd3m2pMgn4ccNZWJyGcmvVmqszDpzUQ4Q1_-tgKVwLR1T4QUiESOgsJzJE0ZR8G9Mz74R3sQUa9oG2XJbHRIGeN7qb609uPjHCi2Ddc7OvmOo1oDmj3Rg0EQp_NClsyOwuuHsOox3sMhO6GtlY"
+                  />
+                </form>
+                <div class="user-links">
+                  <a href="../account/password-reset/index.html"
+                    >Forgot your password?</a
+                  >
                 </div>
+              </div>
             </div>
-</header>
+          </header>
 
 		<main class="content">
 			
@@ -335,26 +458,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 		</main>
 
-		
+	
         <footer class="footer">
-            <div class="container">
-              <p>&#xA9; 2025 SM Invest</p>
-              <ul role="menu">
-                
-               
-                <li role="menuitem">
-                  <a href="../privacy-cookie-policy/index.html" target="">Privacy &amp; Cookie Policy</a>
-                </li>
-                <li role="menuitem">
-                  <a href="index.html" target=""
-                    >Legal/Regulatory Notice</a
-                  >
-                </li>
-               
-              </ul>
+            <div class="top-row">
+              <div class="footer-left-top">
+                <img src="../media/1015/sss.png" class="logo" width="200px" />
+              </div>
+              <div class="footer-right-top">
+                <p id="dragon"><br>Weidstrasse 43, 8472 Seuzach,<br>Switzerland</p>
+                <p>Email : <a href="mailto:contact@sminvest.com">contact@sminvest.com</a></p>
+              </div>
+            </div>
+     
+            <hr class="footer-separator" />
+            <br><br>
+            <div class="bottom-row">
+              <div class="footer-left-bottom">
+                <p class="copyright">© 2025 SM Invest</p>
+              </div>
+              <div class="footer-right-bottom">
+                <ul role="menu">
+                  <li role="menuitem">
+                    <a href="../privacy-cookie-policy/index.html" target="">Privacy & Cookie Policy</a>
+                  </li>
+                  <li role="menuitem">
+                    <a href="index.html" target="">Legal/Regulatory Notice</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </footer>
-
+          
 	</div>
 
 	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
