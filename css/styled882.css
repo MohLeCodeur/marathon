@@ -8346,6 +8346,7 @@ div.contact-info {
 .footer-right-top {
   text-align: right;
   line-height: 1.6;
+  margin-right: 20px;
 }
 
 .footer-right-top a {
@@ -8377,6 +8378,7 @@ div.contact-info {
 
 .footer-left-bottom {
   text-align: left;
+  margin-left:40px;
 }
 
 .footer-right-bottom ul {
