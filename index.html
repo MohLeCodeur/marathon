@@ -1478,8 +1478,106 @@ document.addEventListener("DOMContentLoaded", function () {
 
 				<div class="right">
 					<button type="button" class="btn-client js-open-client"><span>Client area</span></button>
+					<button type="button" class="hamburger"></button>
 					
 				</div>
+				<style>
+        
+					.hamburger {
+					  display: none; /* Caché par défaut */
+					}
+					
+					@media (max-width: 530px) {
+					  .hamburger {
+						display: block; /* Affiche uniquement en dessous de 425px */
+						width: 30px; /* Ajuste selon la taille de ton image */
+					  height: 30px;
+					  background-image: url('./privacy-cookie-policy/front/menu.png'); /* Assure-toi que le chemin est correct */
+					  background-size: contain;
+					  background-repeat: no-repeat;
+					  background-position: center;
+					  border: none;
+					  cursor: pointer;
+					  background-color: transparent; /* Supprime l’arrière-plan du bouton */
+					  margin-left: 80px; /* Ajuste la valeur selon ton besoin */
+					  }
+					
+					  .hero-navigation {
+						display: block; /* Cache le menu par défaut sur petits écrans */
+					  }
+					
+					  .hero-navigation.active {
+						display: none; /* Affiche le menu quand la classe "active" est ajoutée */
+					  }
+					}
+					@media (max-width: 425px) and (min-width: 410px) {
+					  .hamburger {
+						margin-left: 80px;
+					  }
+					}
+					
+					@media (max-width: 409px) and (min-width: 367px) {
+					  .hamburger {
+						margin-left: 59px;
+					  }
+					}
+					@media (max-width: 366px) and (min-width: 344px) {
+					  .hamburger {
+						margin-left: 50px;
+					  }
+					}
+					@media (max-width: 343px) and (min-width: 38px) {
+					  .hamburger {
+						margin-left: 37px;
+					  }
+					}
+					
+					@media (max-width: 320px) {
+					  .hamburger {
+						margin-left: 33px;
+					  }
+					}
+					
+					
+								  </style>
+								  <script>
+									document.addEventListener("DOMContentLoaded", function () {
+									  const menuButton = document.querySelector(".hamburger");
+									  const navMenu = document.querySelector(".hero-navigation");
+								  
+									  menuButton.addEventListener("click", function () {
+										navMenu.classList.toggle("active");
+									  });
+									});
+								  </script>
+								  <script>
+									document.addEventListener("DOMContentLoaded", function () {
+									  const header = document.querySelector(".header-inner");
+									  const hamburger = document.querySelector(".hamburger");
+									  const menu = document.querySelector(".hero-navigation");
+								  
+									  function toggleHamburgerVisibility() {
+										if (header.classList.contains("sticky-header")) {
+										  hamburger.style.display = "block";
+										//   menu.style.display = "block";
+										  
+										} else {
+										  hamburger.style.display = "none";
+										}
+									  }
+								  
+									  // Exécute au chargement
+									  toggleHamburgerVisibility();
+								  
+									  // Ajoute un écouteur de scroll si sticky-header est ajouté dynamiquement
+									  window.addEventListener("scroll", function () {
+										// Ici, adapte si tu ajoutes .sticky-header dynamiquement en scroll
+										toggleHamburgerVisibility();
+									  });
+									});
+								  </script>
+								  
+								 
 			</div>
 
 			<div class="client-overlay-wrap" aria-hidden="true">
