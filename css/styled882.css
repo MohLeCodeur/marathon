@@ -8418,7 +8418,10 @@ div.contact-info {
     align-items: center;
     text-align: center;
   }
-
+  .footer-left-bottom {
+    
+    margin-left:0px;
+  }
   .footer-left-top,
   .footer-right-top,
   .footer-left-bottom,
