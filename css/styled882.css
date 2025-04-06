@@ -3554,19 +3554,7 @@ a.link-cta-left::after {
   white-space: nowrap;
   z-index: 1;
 }
-/* .section-head .header-overl {
-  color: #f5f5f5;
-  font-family: "Playfair Display", serif;
-  font-size: 37px;
-  font-weight: 700;
-  left: -3.2%;
-  letter-spacing: -2px;
-  line-height: 1;
-  position: relative;
-  top: 11px;
-  white-space: nowrap;
-  z-index: 1;
-} */
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-header {
     padding: 55px 0 20px;
@@ -8991,4 +8979,8 @@ div.contact-info {
   left: 0;
   width: 100%;
   height: 100%;
+}
+#magistral {
+
+background-image: url(../privacy-cookie-policy/front/abstract-red.jpg);
 }
