@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="front/style4.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900">
-	<link rel="stylesheet" href="../css/styled882.css?v=Fd3f0XFBpHHPdH8P2gW-Dj62pnboBWRgL9UTkHRXjFw">
+	<link rel="stylesheet" href="../css/invest.css">
 
 	
 	
@@ -399,207 +399,362 @@ margin-left: 80px; /* Ajuste la valeur selon ton besoin */
                 </div>
             </div>
 </header> -->
-
+<style>
+   
+    h1, h2, h3 {
+        color: #2c3e50 ;
+    }
+    .investment-section {
+        margin-bottom: 80px;
+        padding: 30px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+    }
+    .investment-section h2 {
+        border-bottom: 2px solid #720707;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .main-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform 0.3s;
+        border-radius: 4px;
+        margin: 20px 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .main-image:hover {
+        transform: scale(1.01);
+    }
+    /* Modal styles */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.9);
+    }
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .modal-img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin-top: 20px;
+    }
+    .nav-btn {
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 10px 20px;
+        background-color: rgba(94, 6, 6, 0.2);
+        border-radius: 5px;
+    }
+    .button {
+        display: inline-block;
+        padding: 12px 25px;
+        background-color: #6d0b0b;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 15px;
+        transition: background-color 0.3s;
+        font-weight: bold;
+    }
+    .button:hover {
+        background-color: #ce4c10;
+    }
+    .investment-highlights {
+        background-color: #d6e0d9;
+        padding: 15px;
+        border-left: 4px solid #079e5f;
+        margin: 20px 0;
+    }
+     /* Responsive adjustments */
+     @media (min-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            .investment-section {
+                padding: 30px;
+            }
+            .main-image {
+                max-height: 400px;
+            }
+            .button {
+                width: auto;
+                display: inline-block;
+            }
+            .modal-img {
+                max-height: 80vh;
+            }
+            .nav-buttons {
+                width: 80%;
+            }
+        }
+</style>
 		<main class="content">
 			
 <div class="standard-page">
     <div class="container">
         <div class="inner-indented">
             <div class="section-header">
-                <h1>REAL ESTATE</h1>
-                <span class="header-overlay">REAL ESTATE</span>
+                <h1>Premium Investment Proposals</h1>
+                
+                <span class="header-overlay">Investment</span>
             </div>
             <div class="rte-content">
-                <p>&nbsp;</p>
-                <h3>Premium Real Estate Solutions</h3>
-                <p>SM Invest delivers institutional-grade real estate services for discerning investors. Our integrated platform combines global market access with data-driven strategies to optimize your property portfolio's performance across acquisition, enhancement, and disposition phases.</p>
-                <p>
-                    Managing €4.2 billion across 185 properties worldwide, our full-service platform offers end-to-end solutions for ultra-high-net-worth individuals, family offices, and institutional clients. Since 2008, we've consistently delivered top-quartile returns with 19.3% average annual IRR across our value-add strategies.
-                </p>
-            
-                <section id="hero" class="hero-section">
-                    <div class="hero-content container">
-                        <p class="subtitle">Global Real Estate Expertise</p>
-                        <h1>Comprehensive solutions from acquisition to asset optimization</h1>
-                    </div>
-                </section>
-                <br>
-                <p><a href="../contact-us/index.html" class="button">Explore Our Real Estate Services</a></p>
-                
-                <h3>Core Service Pillars</h3>
-                
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h4>Strategic Acquisitions</h4>
+                <p>Discover our exclusive selection of high-value investment opportunities curated by SM Invest's team of experts. Each proposal offers unique advantages and growth potential in its respective market segment.</p>
+        
+                <!-- Villa Investment -->
+                <div class="investment-section" id="villa">
+                    <h2>Luxury Villa Investments</h2>
+                    <p>Our luxury villa portfolio represents the pinnacle of residential real estate investments. Located in the world's most desirable destinations, these properties combine exceptional lifestyle appeal with strong investment fundamentals.</p>
+                    
+                    <div class="investment-highlights">
+                        <p><strong>Investment Highlights:</strong></p>
                         <ul>
-                            <li>Off-market deal sourcing through our proprietary network of 200+ industry relationships</li>
-                            <li>Cross-border transaction execution in 14 jurisdictions with local legal teams</li>
-                            <li>1031 exchange coordination with 45-day identification period management</li>
-                            <li>Bid strategy formulation using game theory and competitive analysis models</li>
-                            <li>Tax-efficient purchase structures including opportunity zone funds</li>
-                            <li>Portfolio acquisitions with simultaneous closings across multiple assets</li>
+                            <li>8-12% projected annual rental yield</li>
+                            <li>15-25% average appreciation over 5 years</li>
+                            <li>Full concierge and property management included</li>
+                            <li>Personal usage up to 60 days per year</li>
                         </ul>
                     </div>
                     
-                    <div class="service-card">
-                        <h4>Asset Management</h4>
+                    <img src="front/villa/1.jpg" alt="Luxury Villa Investment" class="main-image" onclick="openModal('villa', 0)">
+                    
+                    <a href="../contact-us/index.html" class="button">Request Exclusive Villa Portfolio</a>
+                </div>
+        
+                <!-- Yacht Investment -->
+                <div class="investment-section" id="yacht">
+                    <h2>Premium Yacht Investments</h2>
+                    <p>Our yacht investment program offers access to the lucrative charter market with professional management and guaranteed returns. Invest in floating assets that combine passion with profit.</p>
+                    
+                    <div class="investment-highlights">
+                        <p><strong>Investment Highlights:</strong></p>
                         <ul>
-                            <li>Portfolio performance optimization through our proprietary analytics platform</li>
-                            <li>Lease restructuring advisory with 22% average rent uplift on renewals</li>
-                            <li>Operating expense benchmarking against 350 comparable properties</li>
-                            <li>Capital improvement planning with 5-year rolling budgets</li>
-                            <li>Tenant experience programs to maximize retention and satisfaction</li>
-                            <li>Risk management protocols including insurance optimization</li>
+                            <li>10-15% net annual returns</li>
+                            <li>30-60 days personal usage annually</li>
+                            <li>Professional crew and maintenance included</li>
+                            <li>5-year buyback guarantee option</li>
                         </ul>
                     </div>
                     
-                    <div class="service-card">
-                        <h4>Value Creation</h4>
-                        <ul>
-                            <li>Repositioning strategy development with average 35% value increase</li>
-                            <li>Architectural redesign services from our in-house design studio</li>
-                            <li>Luxury finish specifications curated by our materials specialists</li>
-                            <li>Smart building integrations including IoT and automation systems</li>
-                            <li>Branding and marketing strategies for premium positioning</li>
-                            <li>Placemaking initiatives to enhance community appeal</li>
-                        </ul>
-                    </div>
+                    <img src="front/Yacht/1.jpg" alt="Yacht Investment" class="main-image" onclick="openModal('yacht', 0)">
+                    
+                    <a href="../contact-us/index.html" class="button">Explore Yacht Ownership</a>
                 </div>
-            
-                <section id="hero" class="oustroupistache">
-                    <div class="hero-content container">
-                       
-                    </div>
-                </section>
-                <br>
-                <h3>Sustainable Investment Solutions</h3>
-                
-                <h4>Green Portfolio Strategies</h4>
-                <table border="0" style="width:100%;">
-                    <thead>
-                        <tr>
-                            <th style="text-align:left;">Initiative</th>
-                            <th style="text-align:left;">Value Impact</th>
-                            <th style="text-align:left;">Certifications</th>
-                            <th style="text-align:left;">Implementation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Energy retrofits</td>
-                            <td>15-25% NOI improvement</td>
-                            <td>LEED, BREEAM</td>
-                            <td>6-18 month payback period</td>
-                        </tr>
-                        <tr>
-                            <td>Carbon-neutral developments</td>
-                            <td>10-20% valuation premium</td>
-                            <td>WELL, Passive House</td>
-                            <td>3-5 year implementation</td>
-                        </tr>
-                        <tr>
-                            <td>Water conservation systems</td>
-                            <td>30% utility cost reduction</td>
-                            <td>WiredScore</td>
-                            <td>12-24 month installation</td>
-                        </tr>
-                        <tr>
-                            <td>Smart building technology</td>
-                            <td>18% operational efficiency</td>
-                            <td>RESET, Fitwel</td>
-                            <td>Phased implementation</td>
-                        </tr>
-                        <tr>
-                            <td>Biophilic design elements</td>
-                            <td>12% tenant satisfaction increase</td>
-                            <td>Living Building Challenge</td>
-                            <td>Integrated in renovations</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <h3>Global Market Access</h3>
-                
-                <h4>International Investment Platforms</h4>
-                <ul>
-                    <li><strong>European Gateway:</strong> Prime London/Paris office assets with average WALT of 8.2 years</li>
-                    <li><strong>North American Select:</strong> Sunbelt multifamily with 6.5% average yield</li>
-                    <li><strong>Asia-Pacific Growth:</strong> Singapore logistics hubs serving e-commerce leaders</li>
-                    <li><strong>Emerging Markets:</strong> Dubai residential developments with 22% annual appreciation</li>
-                    <li><strong>Global Trophy:</strong> Iconic assets in 6 world cities with institutional ownership</li>
-                    <li><strong>Specialty Sectors:</strong> Medical offices, data centers, and life science facilities</li>
-                </ul>
-                
-                <h4>Local Market Intelligence</h4>
-                <ul>
-                    <li>Zoning regulation analysis with 3D mapping of development potential</li>
-                    <li>Demographic trend mapping using predictive analytics models</li>
-                    <li>Supply-demand forecasting with 5-year projection scenarios</li>
-                    <li>Tax incentive utilization including opportunity zones and historic credits</li>
-                    <li>Transportation impact studies for infrastructure changes</li>
-                    <li>Political risk assessment for emerging markets</li>
-                </ul>
-                
-                <h3>Technical Services</h3>
-                <div class="two-column">
-                    <div class="column">
-                        <h4>Design and Engineering</h4>
+        
+                <!-- Painting Investment -->
+                <div class="investment-section" id="painting">
+                    <h2>Masterpiece Art Investments</h2>
+                    <p>Invest in blue-chip artworks with our managed fine art investment program. We focus on established artists with proven market performance and museum-quality authentication.</p>
+                    
+                    <div class="investment-highlights">
+                        <p><strong>Investment Highlights:</strong></p>
                         <ul>
-                            <li>Architectural feasibility studies with 3D massing models</li>
-                            <li>Luxury interior design from our award-winning studio</li>
-                            <li>Structural engineering for complex adaptive reuse</li>
-                            <li>MEP system optimization for energy efficiency</li>
-                            <li>Façade engineering for aesthetic and performance</li>
-                            <li>Lighting design for ambiance and sustainability</li>
+                            <li>8-12% annualized historical returns</li>
+                            <li>Low correlation with traditional markets</li>
+                            <li>Professional storage and insurance included</li>
+                            <li>Expert authentication and provenance research</li>
                         </ul>
                     </div>
-                    <div class="column">
-                        <h4>Project Execution</h4>
-                        <ul>
-                            <li>General contractor selection through competitive bidding</li>
-                            <li>Construction management with weekly progress reporting</li>
-                            <li>Budget control systems tracking 120+ cost categories</li>
-                            <li>Tenant improvement coordination with build-out oversight</li>
-                            <li>Quality assurance protocols with third-party inspections</li>
-                            <li>Safety compliance monitoring across all sites</li>
-                        </ul>
-                    </div>
+                    
+                    <img src="front/tableau/1.jpg" alt="Art Investment" class="main-image" onclick="openModal('painting', 0)">
+                    
+                    <a href="../contact-us/index.html" class="button">View Current Art Portfolio</a>
                 </div>
-            
-                <h3>Investment Performance</h3>
-                <ul>
-                    <li>22.4% average IRR on value-add strategies since inception</li>
-                    <li>1.82x average equity multiple across realized investments</li>
-                    <li>94% lease renewal rate on managed properties</li>
-                    <li>15.3% average annual return on core holdings</li>
-                    <li>€650 million in capital recycled through strategic dispositions</li>
-                </ul>
-            
-                <section id="hero" class="oustroupistache2">
-                    <div class="hero-content container">
-                       
+        
+                <!-- Building Investment -->
+                <div class="investment-section" id="building">
+                    <h2>Commercial Real Estate Investments</h2>
+                    <p>Our commercial property portfolio offers institutional-grade investments in prime office towers, retail centers, and mixed-use developments across global gateway cities.</p>
+                    
+                    <div class="investment-highlights">
+                        <p><strong>Investment Highlights:</strong></p>
+                        <ul>
+                            <li>5-7% annual cash yield</li>
+                            <li>10-15% total annual return</li>
+                            <li>Long-term lease structures</li>
+                            <li>Professional asset management</li>
+                        </ul>
                     </div>
-                </section>
-            <br>
-                <h3>Client Reporting Suite</h3>
-                <ul>
-                    <li>Quarterly performance reports with custom benchmarks</li>
-                    <li>Monthly asset-level dashboards with key metrics</li>
-                    <li>Annual tax packages with jurisdiction-specific reporting</li>
-                    <li>Environmental impact statements with ESG scoring</li>
-                    <li>Portfolio rebalancing recommendations</li>
-                    <li>24/7 access to our client portal with real-time data</li>
-                </ul>
-                
-                <p><a href="../contact-us/index.html" class="button">Connect With Our Real Estate Team</a></p>
-                
-                <p class="disclaimer">
-                    Past performance is not indicative of future results. Real estate investments involve risks including 
-                    potential loss of principal. Minimum investment requirements apply. Services vary by jurisdiction.
-                </p>
-                
-                <p>&nbsp;</p>
+                    
+                    <img src="front/immo/1.jpg" alt="Commercial Real Estate" class="main-image" onclick="openModal('building', 0)">
+                    
+                    <a href="../contact-us/index.html" class="button">Request Investment Memorandum</a>
+                </div>
+        
+                <!-- Mercedes Investment -->
+                <div class="investment-section" id="mercedes">
+                    <h2>Classic Mercedes-Benz Investments</h2>
+                    <p>Invest in rare and appreciating classic Mercedes-Benz vehicles through our managed collector car program, focusing on limited-production models with documented provenance.</p>
+                    
+                    <div class="investment-highlights">
+                        <p><strong>Investment Highlights:</strong></p>
+                        <ul>
+                            <li>15-25% annual appreciation potential</li>
+                            <li>Climate-controlled storage included</li>
+                            <li>Comprehensive insurance coverage</li>
+                            <li>Buyback options available</li>
+                        </ul>
+                    </div>
+                    
+                    <img src="front/mercedes/1.jpg" alt="Classic Car Investment" class="main-image" onclick="openModal('mercedes', 0)">
+                    
+                    <a href="../contact-us/index.html" class="button">Browse Current Inventory</a>
+                </div>
+        
+                <!-- Dragon Vase Investment -->
+                <div class="investment-section" id="vase">
+                    <h2>Imperial Dragon Vase Investments</h2>
+                    <p>Our rare Chinese porcelain investment program focuses on museum-quality dragon vases from imperial kilns, offering exposure to the rapidly growing Asian art market.</p>
+                    
+                    <div class="investment-highlights">
+                        <p><strong>Investment Highlights:</strong></p>
+                        <ul>
+                            <li>10-20% annual appreciation</li>
+                            <li>Expert authentication included</li>
+                            <li>Secure, climate-controlled storage</li>
+                            <li>Auction representation services</li>
+                        </ul>
+                    </div>
+                    
+                    <img src="front/vase/1.jpg" alt="Dragon Vase Investment" class="main-image" onclick="openModal('vase', 0)">
+                    
+                    <a href="../contact-us/index.html" class="button">Inquire About Availability</a>
+                </div>
             </div>
+        
+            <!-- Modal -->
+            <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                    <img id="modalImage" class="modal-img" src="" alt="">
+                    <div class="nav-buttons">
+                        <div class="nav-btn" onclick="prevImage()">❮</div>
+                        <div class="nav-btn" onclick="nextImage()">❯</div>
+                    </div>
+                </div>
+            </div>
+        
+            <script>
+                // Global variables for modal functionality
+                let currentCategory = '';
+                let currentIndex = 0;
+                const categories = {
+                    villa: [
+                        'front/villa/1.jpg',
+                        'front/villa/2.jpg',
+                        'front/villa/3.jpg',
+                        'front/villa/4.jpg'
+                        
+                    ],
+                    yacht: [
+                        'front/Yacht/1.jpg',
+                        'front/Yacht/2.jpg',
+                        'front/Yacht/3.jpg',
+                        'front/Yacht/4.jpg',
+                        'front/Yacht/5.jpg'
+                      
+                    ],
+                    painting: [
+                        'front/tableau/1.jpg',
+                        'front/tableau/2.jpg',
+                        'front/tableau/3.jpg'
+                       
+                    ],
+                    building: [
+                        'front/immo/1.jpg',
+                        'front/immo/2.jpg'
+                       
+                    ],
+                    mercedes: [
+                        'front/mercedes/1.jpg',
+                        'front/mercedes/2.jpg',
+                        'front/mercedes/3.jpg',
+                        'front/mercedes/4.jpg'
+                      
+                    ],
+                    vase: [
+                        'front/vase/1.jpg',
+                        'front/vase/2.jpg',
+                        'front/vase/3.jpg'
+                      
+                    ]
+                };
+        
+                function openModal(category, index) {
+                    currentCategory = category;
+                    currentIndex = index;
+                    document.getElementById('modalImage').src = categories[category][index];
+                    document.getElementById('imageModal').style.display = "block";
+                    document.body.style.overflow = "hidden"; // Prevent scrolling
+                }
+        
+                function closeModal() {
+                    document.getElementById('imageModal').style.display = "none";
+                    document.body.style.overflow = "auto"; // Re-enable scrolling
+                }
+        
+                function prevImage() {
+                    currentIndex = (currentIndex - 1 + categories[currentCategory].length) % categories[currentCategory].length;
+                    document.getElementById('modalImage').src = categories[currentCategory][currentIndex];
+                }
+        
+                function nextImage() {
+                    currentIndex = (currentIndex + 1) % categories[currentCategory].length;
+                    document.getElementById('modalImage').src = categories[currentCategory][currentIndex];
+                }
+        
+                // Keyboard navigation
+                document.addEventListener('keydown', function(event) {
+                    if (document.getElementById('imageModal').style.display === "block") {
+                        if (event.key === "ArrowLeft") {
+                            prevImage();
+                        } else if (event.key === "ArrowRight") {
+                            nextImage();
+                        } else if (event.key === "Escape") {
+                            closeModal();
+                        }
+                    }
+                });
+        
+                // Close modal when clicking outside the image
+                window.onclick = function(event) {
+                    const modal = document.getElementById('imageModal');
+                    if (event.target == modal) {
+                        closeModal();
+                    }
+                }
+            </script>
         </div>
     </div>
 </div>
