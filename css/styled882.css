@@ -3541,16 +3541,29 @@ a.link-cta-left::after {
   z-index: 1;
 }
 
-/* .section-heade .header-overla {
+.section-heade .header-overla {
   color: #f5f5f5;
   font-family: "Playfair Display", serif;
   font-size: 37px;
   font-weight: 700;
-  left: 3.8%;
+  left: -3.2%;
   letter-spacing: -2px;
   line-height: 1;
   position: relative;
-  top: -20px;
+  top: 11px;
+  white-space: nowrap;
+  z-index: 1;
+}
+/* .section-head .header-overl {
+  color: #f5f5f5;
+  font-family: "Playfair Display", serif;
+  font-size: 37px;
+  font-weight: 700;
+  left: -3.2%;
+  letter-spacing: -2px;
+  line-height: 1;
+  position: relative;
+  top: 11px;
   white-space: nowrap;
   z-index: 1;
 } */
@@ -6564,7 +6577,7 @@ a.link-cta-left::after {
   display: block;
   width: 14px;
   height: 14px;
-  background-image: url("../img/phone.svg");
+  background-image: url("../img/email.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -8314,7 +8327,9 @@ div.contact-info {
     display: none;
   }
 }
-
+#axel {
+  font-size: 34px;
+}
 .footer {
   width: 100%;
   background-color: #770c0c;
