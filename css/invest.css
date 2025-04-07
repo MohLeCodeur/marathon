@@ -8318,6 +8318,7 @@ div.contact-info {
 #axel {
   font-size: 34px;
 }
+
 .footer {
   width: 100%;
   background-color: #770c0c;
@@ -8344,6 +8345,7 @@ div.contact-info {
 
 .footer__logo img {
   display: block;
+  
 }
 
 .footer__contact {
@@ -8409,6 +8411,7 @@ div.contact-info {
   color: #dddddd;
   text-decoration: underline;
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {
