@@ -555,36 +555,39 @@ margin-left: 80px; /* Ajuste la valeur selon ton besoin */
 /* background-position: center;  */
       }
     </style>
-    <footer class="footer">
-      <div class="top-row">
-        <div class="footer-left-top">
-          <img src="../media/1015/sss.png" class="logo" width="200px" />
+     <footer class="footer" aria-label="Pied de page du site">
+      <div class="footer__top">
+        <div class="footer__logo">
+          <img src="../media/1015/sss.png" alt="Logo SM Invest" width="200" />
         </div>
-        <div class="footer-right-top">
-          <p id="dragon"><br>Weidstrasse 43, 8472 Seuzach,<br>Switzerland</p>
-          <p>Email : <a href="mailto:contact@sminvest.com">contact@sminvest.com</a></p>
+        <div class="footer__contact">
+          <address id="dr">
+            Address : Weidstrasse 43, 8472 Seuzach,<br>
+            Switzerland
+          </address>
+          <p id="dragnir">
+            Email :
+            <a href="mailto:contact@sminvest.com">contact@sminvest.com</a>
+          </p>
         </div>
       </div>
-
-      <hr class="footer-separator" />
-      <br><br>
-      <div class="bottom-row">
-        <div class="footer-left-bottom">
-          <p class="copyright">© 2025 SM Invest</p>
-        </div>
-        <div class="footer-right-bottom">
-          <ul role="menu">
-            <li role="menuitem">
-              <a href="index.html" target="">Privacy & Cookie Policy</a>
+    
+      <hr class="footer__separator" />
+    
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2025 SM Invest</p>
+        <nav aria-label="Informations légales et politique de confidentialité">
+          <ul class="footer__links">
+            <li>
+              <a href="index.html">Privacy &amp; Cookie Policy</a>
             </li>
-            <li role="menuitem">
-              <a href="../legal-notice/index.html" target="">Legal/Regulatory Notice</a>
+            <li>
+              <a href="../legal-notice/index.html">Legal/Regulatory Notice</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </footer>
-    
 
 	</div>
 

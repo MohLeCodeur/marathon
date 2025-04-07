@@ -8323,79 +8323,82 @@ div.contact-info {
   background-color: #770c0c;
   color: #ffffff;
   font-size: 14px;
-  padding: 20px 0;
+  padding: 30px 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* Ligne du haut : logo à gauche, contact à droite */
-.footer .top-row {
+.footer__top,
+.footer__bottom {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 0 20px;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-.footer-left-top img {
+.footer__logo img {
   display: block;
 }
 
-.footer-right-top {
+.footer__contact {
   text-align: right;
   line-height: 1.6;
-  margin-right: 20px;
+  text-align: center;
 }
 
-.footer-right-top a {
+
+.footer__contact address {
+  font-style: normal;
+  margin-bottom: 5px;
+}
+
+.footer__contact a {
   color: #ffffff;
   text-decoration: underline;
 }
 
-.footer-right-top a:hover {
+.footer__contact a:hover {
   color: #dddddd;
 }
 
-/* Séparateur */
-.footer .footer-separator {
-  width: 90%;
-  max-width: 1100px;
+.footer__separator {
   border: none;
   border-top: 2px solid #ffffff;
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
-/* Ligne du bas : copyright à gauche, liens à droite */
-.footer .bottom-row {
-  display: flex;
+.footer__bottom {
   justify-content: space-between;
-  align-items: flex-end;
-  padding: 0 20px;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
-.footer-left-bottom {
+.footer__copyright {
+  margin: 0 20px;
   text-align: left;
-  margin-left:40px;
 }
 
-.footer-right-bottom ul {
+.footer__links {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 20px;
   display: flex;
   gap: 15px;
 }
 
-.footer-right-bottom ul li:not(:first-child)::before {
+.footer__links li:not(:first-child)::before {
   content: "|";
   margin-right: 15px;
   color: #ffffff;
 }
 
-/* Liens */
 .footer a {
   color: #ffffff;
   text-decoration: none;
@@ -8405,47 +8408,27 @@ div.contact-info {
   color: #dddddd;
   text-decoration: underline;
 }
-#dragon {
-  text-align: center;
-}
 
-
-
+/* Responsive */
 @media (max-width: 768px) {
-  .footer .top-row,
-  .footer .bottom-row {
+  .footer__top,
+  .footer__bottom {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  .footer-left-bottom {
-    
-    margin-left:0px;
-  }
-  .footer-left-top,
-  .footer-right-top,
-  .footer-left-bottom,
-  .footer-right-bottom {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15px;
+  .footer__contact {
     text-align: center;
+    margin-top: 15px;
   }
-
-  .footer-right-bottom ul {
+  .footer__links {
     flex-direction: column;
     gap: 10px;
   }
-
-  .footer-right-bottom ul li::before {
+  .footer__links li:not(:first-child)::before {
     content: "";
-    margin: 0;
   }
-
-  .footer-left-top img {
-    display: block;
+  .footer__logo img {
     margin: 0 auto;
   }
 }
