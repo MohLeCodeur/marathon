@@ -400,9 +400,9 @@ margin-left: 80px; /* Ajuste la valeur selon ton besoin */
             </div>
 </header> -->
 <style>
-   
+    
     h1, h2, h3 {
-        color: #2c3e50 ;
+        color: #2c3e50;
     }
     .investment-section {
         margin-bottom: 80px;
@@ -416,15 +416,17 @@ margin-left: 80px; /* Ajuste la valeur selon ton besoin */
         margin-bottom: 20px;
     }
     .main-image {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-        cursor: pointer;
-        transition: transform 0.3s;
-        border-radius: 4px;
-        margin: 20px 0;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
+width: 100%;
+height: 800px;
+object-fit: contain; /* Au lieu de cover */
+object-position: center;
+background-color: #f0f0f0; /* Fond uni pour les espaces vides */
+cursor: pointer;
+transition: transform 0.3s;
+border-radius: 4px;
+margin: 20px 0;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
     .main-image:hover {
         transform: scale(1.01);
     }
@@ -487,37 +489,45 @@ margin-left: 80px; /* Ajuste la valeur selon ton besoin */
     .button:hover {
         background-color: #ce4c10;
     }
-    .investment-highlights {
-        background-color: #d6e0d9;
-        padding: 15px;
-        border-left: 4px solid #079e5f;
+    .details-container {
+        display: flex;
+        gap: 20px;
         margin: 20px 0;
     }
-     /* Responsive adjustments */
-     @media (min-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            h2 {
-                font-size: 1.8rem;
-            }
-            .investment-section {
-                padding: 30px;
-            }
-            .main-image {
-                max-height: 400px;
-            }
-            .button {
-                width: auto;
-                display: inline-block;
-            }
-            .modal-img {
-                max-height: 80vh;
-            }
-            .nav-buttons {
-                width: 80%;
-            }
+    .featured-property {
+        flex: 1;
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #720707;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .investment-highlights {
+        flex: 1;
+        background-color: #d6e0d9;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #079e5f;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .details-container h3 {
+        margin-top: 0;
+        color: #2c3e50;
+        font-size: 18px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .details-container ul {
+        padding-left: 20px;
+    }
+    .details-container li {
+        margin-bottom: 8px;
+    }
+    @media (max-width: 768px) {
+        .details-container {
+            flex-direction: column;
         }
+    }
 </style>
 		<main class="content">
 			
@@ -537,14 +547,28 @@ margin-left: 80px; /* Ajuste la valeur selon ton besoin */
                     <h2>Luxury Villa Investments</h2>
                     <p>Our luxury villa portfolio represents the pinnacle of residential real estate investments. Located in the world's most desirable destinations, these properties combine exceptional lifestyle appeal with strong investment fundamentals.</p>
                     
-                    <div class="investment-highlights">
-                        <p><strong>Investment Highlights:</strong></p>
-                        <ul>
-                            <li>8-12% projected annual rental yield</li>
-                            <li>15-25% average appreciation over 5 years</li>
-                            <li>Full concierge and property management included</li>
-                            <li>Personal usage up to 60 days per year</li>
-                        </ul>
+                    <div class="details-container">
+                        <div class="featured-property">
+                            <h3>Featured Property</h3>
+                            <ul>
+                                <li><strong>Villa in Spain:</strong> 1,975,000€</li>
+                                <li><strong>Land:</strong> 751m²</li>
+                                <li><strong>Living area:</strong> 495m²</li>
+                                <li><strong>Bedrooms:</strong> 4</li>
+                                <li><strong>Location:</strong> South of Spain</li>
+                                <li><strong>Features:</strong> Private pool</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="investment-highlights">
+                            <h3>Investment Highlights</h3>
+                            <ul>
+                                <li>8-12% projected annual rental yield</li>
+                                <li>15-25% average appreciation over 5 years</li>
+                                <li>Full concierge and property management included</li>
+                                <li>Personal usage up to 60 days per year</li>
+                            </ul>
+                        </div>
                     </div>
                     
                     <img src="front/villa/1.jpg" alt="Luxury Villa Investment" class="main-image" onclick="openModal('villa', 0)">
@@ -557,14 +581,26 @@ margin-left: 80px; /* Ajuste la valeur selon ton besoin */
                     <h2>Premium Yacht Investments</h2>
                     <p>Our yacht investment program offers access to the lucrative charter market with professional management and guaranteed returns. Invest in floating assets that combine passion with profit.</p>
                     
-                    <div class="investment-highlights">
-                        <p><strong>Investment Highlights:</strong></p>
-                        <ul>
-                            <li>10-15% net annual returns</li>
-                            <li>30-60 days personal usage annually</li>
-                            <li>Professional crew and maintenance included</li>
-                            <li>5-year buyback guarantee option</li>
-                        </ul>
+                    <div class="details-container">
+                        <div class="featured-property">
+                            <h3>Featured Yacht</h3>
+                            <ul>
+                                <li><strong>Model:</strong> Yatch Pardo 43</li>
+                                <li><strong>Size:</strong> 14m / 4.2m</li>
+                                <li><strong>Hours:</strong> 400</li>
+                                <li><strong>Price:</strong> 690,000€</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="investment-highlights">
+                            <h3>Investment Highlights</h3>
+                            <ul>
+                                <li>10-15% net annual returns</li>
+                                <li>30-60 days personal usage annually</li>
+                                <li>Professional crew and maintenance included</li>
+                                <li>5-year buyback guarantee option</li>
+                            </ul>
+                        </div>
                     </div>
                     
                     <img src="front/Yacht/1.jpg" alt="Yacht Investment" class="main-image" onclick="openModal('yacht', 0)">
@@ -577,14 +613,26 @@ margin-left: 80px; /* Ajuste la valeur selon ton besoin */
                     <h2>Masterpiece Art Investments</h2>
                     <p>Invest in blue-chip artworks with our managed fine art investment program. We focus on established artists with proven market performance and museum-quality authentication.</p>
                     
-                    <div class="investment-highlights">
-                        <p><strong>Investment Highlights:</strong></p>
-                        <ul>
-                            <li>8-12% annualized historical returns</li>
-                            <li>Low correlation with traditional markets</li>
-                            <li>Professional storage and insurance included</li>
-                            <li>Expert authentication and provenance research</li>
-                        </ul>
+                    <div class="details-container">
+                        <div class="featured-property">
+                            <h3>Featured Artwork</h3>
+                            <ul>
+                                <li><strong>Artist:</strong> Vincent Van Gogh</li>
+                                <li><strong>Title:</strong> Flowers</li>
+                                <li><strong>Year:</strong> 1885</li>
+                                <li><strong>Price:</strong> 1,240,000€</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="investment-highlights">
+                            <h3>Investment Highlights</h3>
+                            <ul>
+                                <li>8-12% annualized historical returns</li>
+                                <li>Low correlation with traditional markets</li>
+                                <li>Professional storage and insurance included</li>
+                                <li>Expert authentication and provenance research</li>
+                            </ul>
+                        </div>
                     </div>
                     
                     <img src="front/tableau/1.jpg" alt="Art Investment" class="main-image" onclick="openModal('painting', 0)">
@@ -597,14 +645,28 @@ margin-left: 80px; /* Ajuste la valeur selon ton besoin */
                     <h2>Commercial Real Estate Investments</h2>
                     <p>Our commercial property portfolio offers institutional-grade investments in prime office towers, retail centers, and mixed-use developments across global gateway cities.</p>
                     
-                    <div class="investment-highlights">
-                        <p><strong>Investment Highlights:</strong></p>
-                        <ul>
-                            <li>5-7% annual cash yield</li>
-                            <li>10-15% total annual return</li>
-                            <li>Long-term lease structures</li>
-                            <li>Professional asset management</li>
-                        </ul>
+                    <div class="details-container">
+                        <div class="featured-property">
+                            <h3>Featured Property</h3>
+                            <ul>
+                                <li><strong>Area:</strong> 1730m²</li>
+                                <li><strong>Price:</strong> 5,200,000€</li>
+                                <li><strong>Floors:</strong> R+3</li>
+                                <li><strong>Contracts:</strong> 24 rental</li>
+                                <li><strong>Parking:</strong> 11 spaces</li>
+                                <li><strong>Location:</strong> City center of La Rochelle, France</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="investment-highlights">
+                            <h3>Investment Highlights</h3>
+                            <ul>
+                                <li>5-7% annual cash yield</li>
+                                <li>10-15% total annual return</li>
+                                <li>Long-term lease structures</li>
+                                <li>Professional asset management</li>
+                            </ul>
+                        </div>
                     </div>
                     
                     <img src="front/immo/1.jpg" alt="Commercial Real Estate" class="main-image" onclick="openModal('building', 0)">
@@ -617,14 +679,26 @@ margin-left: 80px; /* Ajuste la valeur selon ton besoin */
                     <h2>Classic Mercedes-Benz Investments</h2>
                     <p>Invest in rare and appreciating classic Mercedes-Benz vehicles through our managed collector car program, focusing on limited-production models with documented provenance.</p>
                     
-                    <div class="investment-highlights">
-                        <p><strong>Investment Highlights:</strong></p>
-                        <ul>
-                            <li>15-25% annual appreciation potential</li>
-                            <li>Climate-controlled storage included</li>
-                            <li>Comprehensive insurance coverage</li>
-                            <li>Buyback options available</li>
-                        </ul>
+                    <div class="details-container">
+                        <div class="featured-property">
+                            <h3>Featured Vehicle</h3>
+                            <ul>
+                                <li><strong>Model:</strong> Mercedes-Benz 300SL</li>
+                                <li><strong>Year:</strong> 1958</li>
+                                <li><strong>Mileage:</strong> 60,000km</li>
+                                <li><strong>Price:</strong> 1,425,000€</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="investment-highlights">
+                            <h3>Investment Highlights</h3>
+                            <ul>
+                                <li>15-25% annual appreciation potential</li>
+                                <li>Climate-controlled storage included</li>
+                                <li>Comprehensive insurance coverage</li>
+                                <li>Buyback options available</li>
+                            </ul>
+                        </div>
                     </div>
                     
                     <img src="front/mercedes/1.jpg" alt="Classic Car Investment" class="main-image" onclick="openModal('mercedes', 0)">
@@ -637,14 +711,26 @@ margin-left: 80px; /* Ajuste la valeur selon ton besoin */
                     <h2>Imperial Dragon Vase Investments</h2>
                     <p>Our rare Chinese porcelain investment program focuses on museum-quality dragon vases from imperial kilns, offering exposure to the rapidly growing Asian art market.</p>
                     
-                    <div class="investment-highlights">
-                        <p><strong>Investment Highlights:</strong></p>
-                        <ul>
-                            <li>10-20% annual appreciation</li>
-                            <li>Expert authentication included</li>
-                            <li>Secure, climate-controlled storage</li>
-                            <li>Auction representation services</li>
-                        </ul>
+                    <div class="details-container">
+                        <div class="featured-property">
+                            <h3>Featured Piece</h3>
+                            <ul>
+                                <li><strong>Item:</strong> Dragon Vase Tianqiuping</li>
+                                <li><strong>Year:</strong> 1730</li>
+                                <li><strong>Size:</strong> 51.5cm</li>
+                                <li><strong>Price:</strong> 12,000,000€</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="investment-highlights">
+                            <h3>Investment Highlights</h3>
+                            <ul>
+                                <li>10-20% annual appreciation</li>
+                                <li>Expert authentication included</li>
+                                <li>Secure, climate-controlled storage</li>
+                                <li>Auction representation services</li>
+                            </ul>
+                        </div>
                     </div>
                     
                     <img src="front/vase/1.jpg" alt="Dragon Vase Investment" class="main-image" onclick="openModal('vase', 0)">
