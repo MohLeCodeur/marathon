@@ -8350,6 +8350,7 @@ div.contact-info {
   text-align: right;
   line-height: 1.6;
   text-align: center;
+  margin-right: 58px;
 }
 
 
@@ -8381,7 +8382,7 @@ div.contact-info {
 }
 
 .footer__copyright {
-  margin: 0 20px;
+  margin: 0 40px;
   text-align: left;
 }
 
@@ -8420,6 +8421,7 @@ div.contact-info {
   .footer__contact {
     text-align: center;
     margin-top: 15px;
+    margin-right: 0px !important;
   }
   .footer__links {
     flex-direction: column;
