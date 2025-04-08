@@ -4059,7 +4059,7 @@ a.link-cta-left::after {
   }
 
   .rte-content img {
-    margin-left: -20px;
+    /* margin-left: -20px; */
     width: -webkit-calc(100% + 40px);
     width: calc(100% + 40px);
   }
@@ -8427,7 +8427,7 @@ div.contact-info {
     margin-right: 0px !important;
   }
   .footer__links {
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 10px;
   }
   .footer__links li:not(:first-child)::before {

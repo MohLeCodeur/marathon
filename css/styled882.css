@@ -8424,7 +8424,7 @@ div.contact-info {
     margin-right: 0px !important;
   }
   .footer__links {
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 10px;
   }
   .footer__links li:not(:first-child)::before {
