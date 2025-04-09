@@ -8409,6 +8409,11 @@ div.contact-info {
   color: #dddddd;
   text-decoration: underline;
 }
+@media screen and (min-width: 1024px) and (min-height: 701px) and (max-height: 802px) {
+  .header .logo {
+    top: -4px;
+  }
+}
 
 /* Responsive */
 @media (max-width: 768px) {
