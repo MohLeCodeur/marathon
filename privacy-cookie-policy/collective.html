@@ -331,66 +331,40 @@
                     </div>
         </div>
         </div>
-  <div class="client-overlay-wrap" aria-hidden="true">
-          <div class="client-inner">
-            <button type="button" class="close-overlay">
-              <span class="font-ico-close"></span
-              ><span class="sr-only">Close client overlay</span>
-            </button>
-            <h3>Sign in below</h3>
+        
+ 
+			<div class="client-overlay-wrap" aria-hidden="true">
+				<div class="client-inner">
+					<button type="button" class="close-overlay"><span class="font-ico-close"></span><span
+							class="sr-only">Close client overlay</span></button>
+					<h3>Sign in below</h3>
 
-            <form
-              action="https://www.marathon.co.uk/privacy-cookie-policy/"
-              class="form"
-              enctype="multipart/form-data"
-              id="form13ff0327de4f4d2aa3806717c22782bf"
-              method="post"
-            >
-              <div class="validation-summary-valid" data-valmsg-summary="true">
-                <ul>
-                  <li style="display: none"></li>
-                </ul>
-              </div>
-              <input
-                class="in-text"
-                data-val="true"
-                data-val-required="The User name field is required."
-                id="client-email"
-                name="Username"
-                placeholder="Email address"
-                type="text"
-                value=""
-              /><input
-                class="in-text"
-                data-val="true"
-                data-val-length="The field Password must be a string with a maximum length of 256."
-                data-val-length-max="256"
-                data-val-required="The Password field is required."
-                id="client-password"
-                maxlength="256"
-                name="Password"
-                placeholder="Password"
-                type="password"
-                value=""
-              />
-              <button type="submit" class="btn keep-overlay-open">Login</button>
-              <input
-                name="__RequestVerificationToken"
-                type="hidden"
-                value="CfDJ8GqEOhd3m2pMgn4ccNZWJyHvNOkcYhza6wLupfqg9L5MjT8A8u6F98e4OOEGRkbud5jJ1p8q3I-0w6p0mX-5I6kG4tPb_50E3YIKs2s9srVeMkwLrP439Xx1wwHZ23NFxEyVBk_2J6ARo0VwbQ31kxs"
-              /><input
-                name="ufprt"
-                type="hidden"
-                value="CfDJ8GqEOhd3m2pMgn4ccNZWJyGcmvVmqszDpzUQ4Q1_-tgKVwLR1T4QUiESOgsJzJE0ZR8G9Mz74R3sQUa9oG2XJbHRIGeN7qb609uPjHCi2Ddc7OvmOo1oDmj3Rg0EQp_NClsyOwuuHsOox3sMhO6GtlY"
-              />
-            </form>
-            <div class="user-links">
-              <a href="../account/password-reset/index.html"
-                >Forgot your password?</a
-              >
-            </div>
-          </div>
-        </div>
+
+
+					<form action="https://www.marathon.co.uk/" class="form" enctype="multipart/form-data"
+						id="formf623acffd6894058ac47f0dc6c2e62d4" method="post">
+						<div class="validation-summary-valid" data-valmsg-summary="true">
+							<ul>
+								<li style="display:none"></li>
+							</ul>
+						</div><input class="in-text" data-val="true"
+							data-val-required="The User name field is required." id="client-email" name="Username"
+							placeholder="Email address" type="text" value="" /><input class="in-text" data-val="true"
+							data-val-length="The field Password must be a string with a maximum length of 256."
+							data-val-length-max="256" data-val-required="The Password field is required."
+							id="client-password" maxlength="256" name="Password" placeholder="Password" type="password"
+							value="" /> <button type="submit" class="btn keep-overlay-open">Login</button>
+						<input name="__RequestVerificationToken" type="hidden"
+							value="CfDJ8GqEOhd3m2pMgn4ccNZWJyFtZi4iAilTIsQ5NTwOQ7TU-2asJwFO8xNN88VMGbdLmLdCiSz4HqjikJZf79FDvRBvSBSjEFz5OHoAGyztngU-GPGbvgsWHQzdQC8M9wAq5gEmrW0byaTa1uS6nIYCCb8" /><input
+							name="ufprt" type="hidden"
+							value="CfDJ8GqEOhd3m2pMgn4ccNZWJyGwxm3BEReloIQJSXy5Aq3il9nrLWM4hCF9_fWFwtNWl7H1kd_xZD8mk_ZVm2n9GcKpin6gqA9kNJ_42LfY8ANvOKLqfOm-VfMreiKrpRxCWHVeIE1TsY6KpUB41cWPU1w" />
+					</form>
+					<div class="user-links">
+						<a href="account/password-reset/index.html">Forgot your password?</a>
+					</div>
+
+				</div>
+			</div>
       </header>
 
       <main class="content">
@@ -632,7 +606,27 @@
       
     </div>
 
-    
+  <script>
+document.addEventListener("click", function (event) {
+  // Clic sur bouton "Client area"
+  if (event.target.closest(".js-open-client")) {
+    const overlay = document.querySelector(".client-overlay-wrap");
+    if (overlay) {
+      overlay.classList.add("open");
+    }
+  }
+
+  // Clic sur bouton "Close client overlay"
+  if (event.target.closest(".close-overlay")) {
+    const overlay = document.querySelector(".client-overlay-wrap");
+    if (overlay) {
+      overlay.classList.remove("open");
+    }
+  }
+});
+</script>
+
+
   </body>
 
 </html>
