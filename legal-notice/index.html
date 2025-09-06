@@ -381,7 +381,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <p>&nbsp;</p>
 <h3>PLEASE READ THE REGULATORY INFORMATION AND TERMS OF USE CAREFULLY BEFORE YOU USE THIS WEBSITE</h3>
-<p>SM Asset Management Limited ("SM") provides access to, operates and issues the www.SM.co.uk website (the "Website") subject to the terms and conditions of use (the "terms of use") set out on this page.</p>
+<p>SM Asset Management Limited ("SM") provides access to, operates and issues the www.SM-INVEST.ch website (the "Website") subject to the terms and conditions of use (the "terms of use") set out on this page.</p>
 <p>This important information is addressed to you whether you are reading these pages for yourself or on behalf of another person (such as an employer). It is your responsibility to draw the below to the attention of any other person on whose behalf you read these pages. It is also your responsibility to draw the contents of this page to the attention of anyone who may gain access in any way through you to other pages on this site without first reading this page.</p>
 <h3>Regulatory Information</h3>
 <h5>United Kingdom</h5>
@@ -459,35 +459,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</main>
 
 	
-        <footer class="footer">
-            <div class="top-row">
-              <div class="footer-left-top">
-                <img src="../media/1015/sss.png" class="logo" width="200px" />
-              </div>
-              <div class="footer-right-top">
-                <p id="dragon"><br>Weidstrasse 43, 8472 Seuzach,<br>Switzerland</p>
-                <p>Email : <a href="mailto:info@sminvest.com">info@sminvest.com</a></p>
-              </div>
-            </div>
-     
-            <hr class="footer-separator" />
-            <br><br>
-            <div class="bottom-row">
-              <div class="footer-left-bottom">
-                <p class="copyright">© 2025 SM Invest</p>
-              </div>
-              <div class="footer-right-bottom">
-                <ul role="menu">
-                  <li role="menuitem">
-                    <a href="../privacy-cookie-policy/index.html" target="">Privacy & Cookie Policy</a>
-                  </li>
-                  <li role="menuitem">
-                    <a href="index.html" target="">Legal/Regulatory Notice</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </footer>
+       <footer class="footer" aria-label="Pied de page du site">
+  <div class="footer__top">
+    <div class="footer__logo">
+      <img src="../media/1015/sss.png" alt="Logo SM Invest" width="200" />
+    </div>
+    <div class="footer__contact">
+      <address id="dr">
+        Address : Weidstrasse 43, 8472 Seuzach,<br>
+        Switzerland
+      </address>
+      <p id="dragnir">
+        Email :
+        <a href="mailto:info@sm-invest.ch">info@sm-invest.ch</a>
+      </p>
+    </div>
+  </div>
+
+  <hr class="footer__separator" />
+
+  <div class="footer__bottom">
+    <p class="footer__copyright">© 2025 SM Invest</p>
+    <nav aria-label="Informations légales et politique de confidentialité">
+      <ul class="footer__links">
+        <li>
+          <a href="../privacy-cookie-policy/index.html">Privacy &amp; Cookie Policy</a>
+        </li>
+        <li>
+          <a href="index.html">Legal/Regulatory Notice</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
           
 	</div>
 
@@ -498,7 +502,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- Google Analytics) -->
 	
 	<!-- Google Analytics) -->
+<script>
+document.addEventListener("click", function (event) {
+  // Clic sur bouton "Client area"
+  if (event.target.closest(".js-open-client")) {
+    const overlay = document.querySelector(".client-overlay-wrap");
+    if (overlay) {
+      overlay.classList.add("open");
+    }
+  }
 
+  // Clic sur bouton "Close client overlay"
+  if (event.target.closest(".close-overlay")) {
+    const overlay = document.querySelector(".client-overlay-wrap");
+    if (overlay) {
+      overlay.classList.remove("open");
+    }
+  }
+});
+</script>
 </body>
 
 <!-- Mirrored from www.SM.co.uk/legal-notice/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Mar 2025 23:09:52 GMT -->
